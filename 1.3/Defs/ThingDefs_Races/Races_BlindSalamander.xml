@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>VAE_BlindSalamander</defName>
+		<defName>VAECaves_BlindSalamander</defName>
 		<label>blind salamander</label>
-		
-		<description>One of the many hardy rodent species that follows humankind everywhere it spreads. Squirrels are distinguished by their bushy tails, which they use as umbrellas in bad weather.</description>
+		<description>.</description>
 		<statBases>
 			<MoveSpeed>5.1</MoveSpeed>
 			<MarketValue>35</MarketValue>
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+			<MarketValue>850</MarketValue>
 		</statBases>
 		<uiIconScale>2</uiIconScale>
 		<comps>
-      <li Class="AnimalBehaviours.CompProperties_RegisterAlternateGraphic">
+			<li Class="AnimalBehaviours.CompProperties_RegisterAlternateGraphic">
        
       </li>
-     
-    </comps>
+		</comps>
 		<tools>
 			<li>
 				<label>left claw</label>
@@ -58,14 +57,27 @@
 			</li>
 		</tools>
 		<race>
+			<wildBiomes>
+				<BorealForest>0.02</BorealForest>
+				<Tundra>0.02</Tundra>
+				<ColdBog>0.05</ColdBog>
+				<TemperateSwamp>0.05</TemperateSwamp>
+				<TropicalSwamp>0.05</TropicalSwamp>
+				<TemperateForest>0.02</TemperateForest>
+				<AridShrubland>0.02</AridShrubland>
+				<Desert>0.02</Desert>
+				<TropicalRainforest>0.02</TropicalRainforest>
+
+			</wildBiomes>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseBodySize>0.2</baseBodySize>
 			<baseHealthScale>0.25</baseHealthScale>
 			<baseHungerRate>0.1</baseHungerRate>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<leatherDef>Leather_Light</leatherDef>
+			<foodType>VegetarianAnimal,AnimalProduct</foodType>
+			<leatherDef>Leather_Lizard</leatherDef>
 			<wildness>0.75</wildness>
-			<trainability>None</trainability>
+			<useMeatFrom>Iguana</useMeatFrom>
+			<trainability>Intermediate</trainability>
 			<gestationPeriodDays>5.661</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
@@ -102,19 +114,35 @@
 			<li>AnimalCommon</li>
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>VAE_BlindSalamander</defName>
+		<defName>VAECaves_BlindSalamander</defName>
 		<label>blind salamander</label>
-		<race>VAE_BlindSalamander</race>
+		<race>VAECaves_BlindSalamander</race>
 		<combatPower>33</combatPower>
 		<ecoSystemWeight>0.2</ecoSystemWeight>
+		<alternateGraphicChance>1</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlue</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderOrange</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderYellow</texPath>
+			</li>
+		</alternateGraphics>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
 					<drawSize>1</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_Dessicated_BlindSalamander</texPath>
@@ -125,7 +153,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
 					<drawSize>1.25</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_Dessicated_BlindSalamander</texPath>
@@ -136,7 +163,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
 					<drawSize>1.5</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_Dessicated_BlindSalamander</texPath>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	
+	<ThoughtDef>
+		<defName>VAE_SalamanderThought</defName>
+		<durationDays>0.2</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>we have them all!</label>
+				<description>We have collected all the natural Blind Salamander colours. They are so cool!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>VAE_SalamanderThoughtBonded</defName>
+		<durationDays>0.2</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>we have them all!</label>
+				<description>We have collected all the natural Blind Salamander colours. They are so cool!</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+</Defs>
