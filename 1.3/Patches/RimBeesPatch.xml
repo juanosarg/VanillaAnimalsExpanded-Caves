@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimBees</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "VAECaves_CaveBear"]/comps/li[@Class = AnimalBehaviours.CompProperties_DigWhenHungry]/customThingsToDig</xpath>
+					<value>
+
+					<li>RB_BaseHoney</li>
+				
+
+
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "VAECaves_CaveBear"]/comps/li[@Class = AnimalBehaviours.CompProperties_DigWhenHungry]/customAmountsToDig</xpath>
+					<value>
+
+					<li>15</li>
+				
+
+
+
+					</value>
+				</li>
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
