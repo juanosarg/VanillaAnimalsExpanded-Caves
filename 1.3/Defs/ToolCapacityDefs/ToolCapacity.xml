@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+
+  <ToolCapacityDef>
+    <defName>VAE_PlagueBite</defName>
+    <label>plagued bite</label>
+  </ToolCapacityDef>
+  
+    <ToolCapacityDef>
+    <defName>VAE_VeryToxicBite</defName>
+    <label>very toxic bite</label>
+  </ToolCapacityDef>
+  
+  <ToolCapacityDef>
+		<defName>VAE_ToxicSting</defName>
+		<label>toxic sting</label>
+	</ToolCapacityDef>
+
+
+
+</Defs>

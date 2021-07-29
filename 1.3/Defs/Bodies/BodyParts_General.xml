@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyPartDef>
+		<defName>VAE_Wing</defName>
+		<label>wing</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>VAE_ScorpionTail</defName>
+		<label>scorpion tail</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>8</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>VAE_InsectArm</defName>
+		<label>arm</label>
+		<hitPoints>30</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+</Defs>

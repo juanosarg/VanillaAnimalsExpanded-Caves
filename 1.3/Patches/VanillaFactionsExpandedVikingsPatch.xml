@@ -5,7 +5,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Vanilla Factions Expanded - Insectoids</li>
+			<li>Vanilla Factions Expanded - Vikings</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -14,12 +14,10 @@
 
 				<li Class="PatchOperationAdd">
 
-					<xpath>/Defs/ThingDef[defName = "VAECaves_CaveCrawler"]</xpath>
+					<xpath>/Defs/ThingDef[defName = "VAECaves_CaveBear"]/comps/li[@Class = AnimalBehaviours.CompProperties_DigWhenHungry]/customThingsToDig</xpath>
 					<value>
 
-					<butcherProducts>
-						<VFEI_Chitin>40</VFEI_Chitin>
-					</butcherProducts>
+					<li>VFEV_Honey</li>
 				
 
 
@@ -29,22 +27,16 @@
 				
 				<li Class="PatchOperationAdd">
 
-					<xpath>/Defs/ThingDef[defName = "VAECaves_InsectoidHulk"]</xpath>
+					<xpath>/Defs/ThingDef[defName = "VAECaves_CaveBear"]/comps/li[@Class = AnimalBehaviours.CompProperties_DigWhenHungry]/customAmountsToDig</xpath>
 					<value>
 
-					<butcherProducts>
-						<VFEI_Chitin>60</VFEI_Chitin>
-					</butcherProducts>
+					<li>15</li>
 				
 
 
 
 					</value>
 				</li>
-				
-				
-				
-				
 
 
 

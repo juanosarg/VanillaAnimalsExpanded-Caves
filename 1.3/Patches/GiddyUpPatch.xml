@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Giddy-up! Battle Mounts</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName = "VAECaves_CaveCrawler"]/comps</xpath>
+							<value>
+								<li Class="GiddyUpCore.CompProperties_Mount">
+									<isException>true</isException>
+								</li>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName = "VAECaves_InsectoidHulk"]/comps</xpath>
+							<value>
+								<li Class="GiddyUpCore.CompProperties_Mount">
+									<isException>true</isException>
+								</li>
+							</value>
+						</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>
+

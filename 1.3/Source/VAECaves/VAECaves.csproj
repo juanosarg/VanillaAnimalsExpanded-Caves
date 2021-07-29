@@ -295,6 +295,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\JobDrivers\JobDriver_LeaveMap.cs" />
     <Compile Include="HarmonyPatches\Patch_WildAnimalSpawner.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
     <Compile Include="VAEShrubland.cs" />

@@ -56,5 +56,30 @@
       </li>
     </comps>
   </ThingDef>
+  
+  <!-- Cave Crawler Egg -->
+  
+	
+	<ThingDef ParentName="EggFertBase">
+		<defName>VAECaves_CaveCrawlerEggFertilized</defName>
+		<label>cave crawler egg (fert.)</label>
+		<description>Fertilized cave crawler egg. It can be eaten raw, but it's much, much better cooked. Actually, it's an insect egg, it is disgusting either way... If all goes well, it should hatch into a cave crawler.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Resource/VAE_EggBeetle</texPath>
+			<color>(183,95,71)</color>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>VAECaves_CaveCrawler</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 
 </Defs>
