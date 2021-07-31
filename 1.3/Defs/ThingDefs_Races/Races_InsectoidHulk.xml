@@ -32,6 +32,40 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 			<li>
+				<label>arm</label>
+				<capacities>
+					<li>VAE_HulkAttack</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>two arm slam</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
@@ -46,7 +80,8 @@
 		<race>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<foodType>OmnivoreAnimal, AnimalProduct</foodType>
+			<foodType>CarnivoreAnimal</foodType>
+			<predator>true</predator>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<body>VAE_InsectoidHulkBody</body>

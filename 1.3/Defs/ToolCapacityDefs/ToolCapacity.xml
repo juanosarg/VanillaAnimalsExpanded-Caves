@@ -3,19 +3,24 @@
 <Defs>
 
 
-  <ToolCapacityDef>
-    <defName>VAE_PlagueBite</defName>
-    <label>plagued bite</label>
-  </ToolCapacityDef>
-  
-    <ToolCapacityDef>
-    <defName>VAE_VeryToxicBite</defName>
-    <label>very toxic bite</label>
-  </ToolCapacityDef>
-  
-  <ToolCapacityDef>
+	<ToolCapacityDef>
+		<defName>VAE_PlagueBite</defName>
+		<label>plagued bite</label>
+	</ToolCapacityDef>
+
+	<ToolCapacityDef>
+		<defName>VAE_VeryToxicBite</defName>
+		<label>very toxic bite</label>
+	</ToolCapacityDef>
+
+	<ToolCapacityDef>
 		<defName>VAE_ToxicSting</defName>
 		<label>toxic sting</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>VAE_HulkAttack</defName>
+		<label>hulk attack</label>
 	</ToolCapacityDef>
 
 

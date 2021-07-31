@@ -106,12 +106,18 @@
           <customLabel>right arm</customLabel>
           <coverage>0.06</coverage>
           <height>Top</height>
+		  <groups>
+                    <li>Arms</li>
+                  </groups>
         </li>
 		 <li>
           <def>VAE_InsectArm</def>
           <customLabel>left arm</customLabel>
           <coverage>0.06</coverage>
           <height>Top</height>
+		  <groups>
+                    <li>Arms</li>
+                  </groups>
         </li>
         
       </parts>

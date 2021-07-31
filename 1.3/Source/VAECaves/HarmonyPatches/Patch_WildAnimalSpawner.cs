@@ -45,18 +45,21 @@ namespace VAECaves
                 }
             }
 
+
+
             private static bool EligibleToSpawn(bool original, PawnKindDef pawnkind, Map map)
             {
-                // If the pawn requires a river, check that the map also has a river
+                
                 if (original)
                 {
                     
-                    if (pawnkind.defName.Contains("VAECaves_"))
+                    if (pawnkind!=null && pawnkind.defName.Contains("VAECaves_"))
                     {
                         if (!Find.World.HasCaves(map.Tile))
                         {
                             return false;
                         }
+                       
                     }
                 }
                 return original;

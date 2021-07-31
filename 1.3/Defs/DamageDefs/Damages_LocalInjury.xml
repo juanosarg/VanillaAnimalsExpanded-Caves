@@ -62,6 +62,18 @@
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
+	
+	<DamageDef ParentName="BluntBase">
+		<defName>VAE_HulkAttack</defName>
+		<label>arm smash</label>
+		<additionalHediffs>
+			<li>
+				<hediff>VAE_StunnedByViciousAttack</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+				
+			</li>
+		</additionalHediffs>
+	</DamageDef>
 
 	
 

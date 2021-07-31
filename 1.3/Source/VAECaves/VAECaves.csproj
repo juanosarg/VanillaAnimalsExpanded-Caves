@@ -298,7 +298,9 @@
     <Compile Include="AI\JobDrivers\JobDriver_LeaveMap.cs" />
     <Compile Include="HarmonyPatches\Patch_WildAnimalSpawner.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
-    <Compile Include="VAEShrubland.cs" />
+    <Compile Include="Hediffs\HediffComp_ViciousAttack.cs" />
+    <Compile Include="Hediffs\Properties\HediffCompProperties_ViciousAttack.cs" />
+    <Compile Include="HarmonyPatches\VAECaves.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
