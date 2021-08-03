@@ -28,7 +28,8 @@ namespace VAECaves
                     Pawn pawn = thing as Pawn;
                     if (pawn != null && pawn.def.defName == "VAECaves_InsectoidHulk")
                     {
-                        pawn.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("ManhunterPermanent", true), null, true, false, null, false);
+                        pawn.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("VAECaves_Bloodlust", true), null, true, false, null, false);
+                        Messages.Message("VAE_HulkBloodlust".Translate(), pawn, MessageTypeDefOf.NegativeEvent);
                     }
                 }
 

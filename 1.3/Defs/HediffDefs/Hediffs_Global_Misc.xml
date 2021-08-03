@@ -85,6 +85,52 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>VAE_SilkCovered</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>silk covered</label>
+		<description>This creature has been attacked by a giant spider and is partially covered in strands of adhessive silk.</description>
+		<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>true</isBad>
+		<comps>
+			
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>-2</severityPerDayNotImmune>
+			</li>
+			
+		</comps>
+		<stages>
+			<li>
+				
+				<capMods>
+					
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.25</offset>
+					</li>
+					
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VAE_WallBreaker</defName>
+		<hediffClass>VAECaves.Hediff_WallBreaker</hediffClass>
+		<label>wallbreaker</label>
+		<description>This insectoid hulk is rampaging ravenously and will crush walls and other structures in his path.</description>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+
+			</li>
+		</stages>
+	</HediffDef>
 
 	
 	

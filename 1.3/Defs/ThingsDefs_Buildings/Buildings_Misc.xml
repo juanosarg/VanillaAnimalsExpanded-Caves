@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <ThingDef ParentName="BuildingNaturalBase">
+    <defName>VAECaves_Coccoon</defName>
+    <label>spider coccoon</label>
+    <description>A spider coccoon. It might contain prey.</description>
+    <thingClass>VAECaves.Building_Coccoon</thingClass>
+    <graphicData>
+      <texPath>Things/Building/VAE_WebCocoon</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1,1)</drawSize>
+     
+    </graphicData>
+    <size>(1,1)</size>
+    <pathCost>42</pathCost>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+   
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <preventDeteriorationInside>false</preventDeteriorationInside>
+      <deconstructible>false</deconstructible>
+       <claimable>false</claimable>
+    </building>
+    <statBases>
+      <WorkToBuild>2400</WorkToBuild>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>2.0</Flammability>
+      
+      <Beauty>0</Beauty>
+    </statBases>
+    
+    <inspectorTabs>
+     
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+   
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <blockWind>true</blockWind>
+  
+   
+  </ThingDef>
+
+ 
+
+</Defs>

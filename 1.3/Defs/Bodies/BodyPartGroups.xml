@@ -7,6 +7,12 @@
     <label>stinging tail</label>
   </BodyPartGroupDef>
   
+  <BodyPartGroupDef>
+    <defName>VAE_Arms</defName>
+    <label>claws</label>
+    <listOrder>90</listOrder>
+  </BodyPartGroupDef>
+  
   
 
 </Defs>

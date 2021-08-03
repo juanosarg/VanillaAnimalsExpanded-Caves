@@ -107,7 +107,7 @@
           <coverage>0.06</coverage>
           <height>Top</height>
 		  <groups>
-                    <li>Arms</li>
+                    <li>VAE_Arms</li>
                   </groups>
         </li>
 		 <li>
@@ -116,7 +116,7 @@
           <coverage>0.06</coverage>
           <height>Top</height>
 		  <groups>
-                    <li>Arms</li>
+                    <li>VAE_Arms</li>
                   </groups>
         </li>
         

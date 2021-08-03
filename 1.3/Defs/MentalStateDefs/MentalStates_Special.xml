@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <MentalStateDef ParentName="Manhunter">
+    <defName>VAECaves_Bloodlust</defName>
+	<label>bloodlust</label>
+    <minTicksBeforeRecovery>850</minTicksBeforeRecovery>
+    <unspawnedCanDo>true</unspawnedCanDo>
+    <recoverFromSleep>false</recoverFromSleep>
+    <recoverFromDowned>false</recoverFromDowned>
+    <recoverFromCollapsingExhausted>false</recoverFromCollapsingExhausted>
+  </MentalStateDef>
+
+ 
+
+</Defs>

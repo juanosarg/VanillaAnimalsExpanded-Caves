@@ -23,6 +23,15 @@
 		<label>hulk attack</label>
 	</ToolCapacityDef>
 
+	<ToolCapacityDef>
+		<defName>VAE_HulkDualAttack</defName>
+		<label>two arm slam</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>VAE_CoccoonBite</defName>
+		<label>coccoon bite</label>
+	</ToolCapacityDef>
 
 
 </Defs>

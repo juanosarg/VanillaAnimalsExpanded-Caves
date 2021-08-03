@@ -48,9 +48,36 @@
 			<meleeDamageDef>VAE_HulkAttack</meleeDamageDef>
 		</verb>
 		<logEntryDef>MeleeAttack</logEntryDef>
-		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
-		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
-		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
-		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>VAE_HulkDualAttack</defName>
+		<requiredCapacity>VAE_HulkDualAttack</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>VAE_HulkDualAttack</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	<ManeuverDef>
+		<defName>VAE_CoccoonBite</defName>
+		<requiredCapacity>VAE_CoccoonBite</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>VAE_CoccoonBite</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
 </Defs>

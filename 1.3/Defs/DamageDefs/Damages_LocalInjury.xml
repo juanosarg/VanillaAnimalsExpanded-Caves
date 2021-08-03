@@ -63,7 +63,7 @@
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
 	
-	<DamageDef ParentName="BluntBase">
+	<DamageDef ParentName="CutBase">
 		<defName>VAE_HulkAttack</defName>
 		<label>arm smash</label>
 		<additionalHediffs>
@@ -75,7 +75,32 @@
 		</additionalHediffs>
 	</DamageDef>
 
+	<DamageDef ParentName="CutBase">
+		<defName>VAE_HulkDualAttack</defName>
+		<label>two arm slam</label>
+		<workerClass>VAECaves.DamageWorker_TwoArmSlam</workerClass>
+		<additionalHediffs>
+			<li>
+				<hediff>VAE_StunnedByViciousAttack</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+				
+			</li>
+		</additionalHediffs>
+	</DamageDef>
 	
+	<DamageDef ParentName="Bite">
+		<defName>VAE_CoccoonBite</defName>
+		<label>coccoon bite</label>
+		<workerClass>VAECaves.DamageWorker_CoccoonBite</workerClass>
+		<additionalHediffs>
+			<li>
+				<hediff>VAE_SilkCovered</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+				
+			</li>
+		</additionalHediffs>
+		
+	</DamageDef>
 
 
 

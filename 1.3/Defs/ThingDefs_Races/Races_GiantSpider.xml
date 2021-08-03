@@ -1,41 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- ====================================================== -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>VAECaves_CaveCrawler</defName>
-		<label>cave crawler</label>
+		<defName>VAECaves_GiantSpider</defName>
+		<label>giant spider</label>
 		<description>.</description>
 		<statBases>
-			<MoveSpeed>5</MoveSpeed>
-			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<MoveSpeed>3</MoveSpeed>
+			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
-			<MarketValue>1600</MarketValue>
+			<MarketValue>1000</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<ToxicSensitivity>0</ToxicSensitivity>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<FilthRate>8</FilthRate>
 		</statBases>
-		
 		<comps>
-			
-			<li Class="CompProperties_EggLayer">
-				<eggFertilizedDef>VAECaves_CaveCrawlerEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>25</eggLayIntervalDays>
-				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-				<eggCountRange>1</eggCountRange>
+
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>60</rateInTicks>
+
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_EnrageOtherPawns">
+				<pawnkinddefsToAffect>
+					<li>VAECaves_GiantSpider</li>
+					<li>VAECaves_AncientGiantSpider</li>
+					<li>VAECaves_GiantSpiderHatchling</li>
+				</pawnkinddefsToAffect>
+
+			</li>
+
 		</comps>
 		<tools>
+			
 			<li>
 				<label>mandibles</label>
 				<capacities>
-					<li>VAE_PlagueBite</li>
+					<li>VAE_CoccoonBite</li>
 				</capacities>
-				<power>12.5</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
 			</li>
+			
 			<li>
 				<label>head</label>
 				<capacities>
@@ -49,31 +64,30 @@
 			</li>
 		</tools>
 		<race>
-		<wildBiomes>
-				<BorealForest>0.001</BorealForest>
-				<IceSheet>0.001</IceSheet>
-				<Tundra>0.001</Tundra>
-				<ColdBog>0.001</ColdBog>
-				<SeaIce>0.001</SeaIce>
-				<TemperateSwamp>0.002</TemperateSwamp>
-				<TropicalSwamp>0.001</TropicalSwamp>
-				<TemperateForest>0.005</TemperateForest>
-				<TropicalRainforest>0.003</TropicalRainforest>
-				<AridShrubland>0.002</AridShrubland>
-				<Desert>0.002</Desert>
-				<ExtremeDesert>0.002</ExtremeDesert>
+			<wildBiomes>
+				<ColdBog>0.005</ColdBog>
+				<BorealForest>0.005</BorealForest>
+				<Tundra>0.005</Tundra>				
+				<IceSheet>0.005</IceSheet>
+				<SeaIce>0.005</SeaIce>
+				<TemperateSwamp>0.005</TemperateSwamp>
+				<TemperateForest>0.005</TemperateForest>		
+				<TropicalSwamp>0.005</TropicalSwamp>					
+				<TropicalRainforest>0.005</TropicalRainforest>
+				<AridShrubland>0.005</AridShrubland>
+				<Desert>0.005</Desert>
+				<ExtremeDesert>0.005</ExtremeDesert>					
 			</wildBiomes>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<foodType>Corpse,CarnivoreAnimal</foodType>
-			<maxPreyBodySize>0.5</maxPreyBodySize>
+			<foodType>CarnivoreAnimal</foodType>
+			<predator>true</predator>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
-			<body>BeetleLike</body>
-			<canBePredatorPrey>false</canBePredatorPrey>
-			<baseBodySize>2.3</baseBodySize>
+			<body>VAE_Arachnid</body>
+			<baseBodySize>2</baseBodySize>
 			<baseHungerRate>0.05</baseHungerRate>
-			<baseHealthScale>2.5</baseHealthScale>
+			<baseHealthScale>2</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeExpectancy>10</lifeExpectancy>
 			<wildness>1</wildness>
@@ -106,51 +120,60 @@
 			</mergeCompatibilityTags>
 		</ingredient>
 		<tradeTags>
-			<li>AnimalInsect</li>
+			<li>AnimalAlpha</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>VAECaves_CaveCrawler</defName>
-		<label>cave crawler</label>
-		<race>VAECaves_CaveCrawler</race>
-		<combatPower>250</combatPower>
+		<defName>VAECaves_GiantSpider</defName>
+		<label>giant spider</label>
+		<race>VAECaves_GiantSpider</race>
+		<combatPower>400</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<wildGroupSize>
+			<min>3</min>
+			<max>6</max>
+		</wildGroupSize>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_CaveCrawler</texPath>
+					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_GiantSpider</texPath>
 					<drawSize>2</drawSize>
-					
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_Dessicated_CaveCrawler</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_CaveCrawler</texPath>
-					<drawSize>2.5</drawSize>
-					
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_Dessicated_CaveCrawler</texPath>
-					<drawSize>2.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_CaveCrawler</texPath>
-					<drawSize>3</drawSize>
-				
 					<shadowData>
-						  <volume>(0.5, 0.7, 0.43)</volume>
-            <offset>(0,0,-0.1)</offset>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_Dessicated_CaveCrawler</texPath>
+					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_Dessicated_GiantSpider</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_GiantSpider</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_Dessicated_GiantSpider</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_GiantSpider</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_Dessicated_GiantSpider</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

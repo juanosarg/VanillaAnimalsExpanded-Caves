@@ -14,6 +14,7 @@
 			<li Class="AnimalBehaviours.CompProperties_RegisterAlternateGraphic">
 				
 			</li>
+			
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>VAECaves_EggSalamanderFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
@@ -69,7 +70,7 @@
 				<ColdBog>0.05</ColdBog>
 				<TemperateSwamp>0.05</TemperateSwamp>
 				<TropicalSwamp>0.05</TropicalSwamp>
-				<TemperateForest>0.02</TemperateForest>
+				<TemperateForest>0.05</TemperateForest>
 				<AridShrubland>0.02</AridShrubland>
 				<Desert>0.02</Desert>
 				<TropicalRainforest>0.02</TropicalRainforest>

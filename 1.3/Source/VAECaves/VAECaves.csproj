@@ -296,15 +296,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI\JobDrivers\JobDriver_LeaveMap.cs" />
+    <Compile Include="Building\Building_Coccoon.cs" />
+    <Compile Include="Damage\DamageWorker_CoccoonBite.cs" />
+    <Compile Include="Damage\DamageWorker_TwoArmSlam.cs" />
     <Compile Include="HarmonyPatches\Patch_WildAnimalSpawner.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
     <Compile Include="Hediffs\HediffComp_ViciousAttack.cs" />
+    <Compile Include="Hediffs\Hediff_WallBreaker.cs" />
     <Compile Include="Hediffs\Properties\HediffCompProperties_ViciousAttack.cs" />
     <Compile Include="HarmonyPatches\VAECaves.cs" />
+    <Compile Include="Incidents\IncidentWorker_Hulk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<AnimalBehaviours.AnimalsUnaffectedBySelfTameDef>
+		<defName>VAECaves_AnimalsUnaffectedBySelfTameDef</defName>
+		<unaffectedBySelfTamePawns>		
+			<li>VAECaves_BlindSalamander</li>
+			<li>VAECaves_InsectoidHulk</li>
+			<li>VAECaves_CaveBear</li>
+			<li>VAECaves_CaveCrawler</li>
+			<li>VAECaves_Wyrm</li>
+			<li>VAECaves_GiantSpider</li>
+			<li>VAECaves_GiantSpiderHatchling</li>
+			<li>VAECaves_AncientGiantSpider</li>
+		
+		</unaffectedBySelfTamePawns>							
+	</AnimalBehaviours.AnimalsUnaffectedBySelfTameDef>
+
+
+
+
+
+
+
+</Defs>
