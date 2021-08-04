@@ -101,6 +101,13 @@
 		</additionalHediffs>
 		
 	</DamageDef>
+	
+	<DamageDef ParentName="Bite">
+		<defName>VAE_InfectedMandibles</defName>
+		<label>infected mandibles</label>
+		<workerClass>AnimalBehaviours.DamageWorker_ExtraInfecter</workerClass>
+		
+	</DamageDef>
 
 
 

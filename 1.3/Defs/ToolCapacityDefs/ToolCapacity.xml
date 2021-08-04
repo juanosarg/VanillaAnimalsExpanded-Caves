@@ -32,6 +32,11 @@
 		<defName>VAE_CoccoonBite</defName>
 		<label>coccoon bite</label>
 	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>VAE_InfectedMandibles</defName>
+		<label>infected mandibles</label>
+	</ToolCapacityDef>
 
 
 </Defs>

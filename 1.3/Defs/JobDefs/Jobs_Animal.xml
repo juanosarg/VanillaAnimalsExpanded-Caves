@@ -8,5 +8,19 @@
 		<reportString>leaving.</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
+	
+	<JobDef>
+		<defName>VAECaves_OpenCoccoon</defName>
+		<driverClass>VAECaves.JobDriver_OpenCoccoon</driverClass>
+		<reportString>opening coccoon.</reportString>
+		
+	</JobDef>
+	
+	<JobDef>
+		<defName>VAECaves_BuildSpiderLair</defName>
+		<driverClass>VAECaves.JobDriver_BuildSpiderLair</driverClass>
+		<reportString>building spider lair.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
 
 </Defs>

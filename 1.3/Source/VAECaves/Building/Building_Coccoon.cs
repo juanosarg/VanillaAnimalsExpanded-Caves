@@ -3,6 +3,7 @@ using RimWorld;
 using Verse;
 using System.Collections.Generic;
 using Verse.Sound;
+using UnityEngine;
 
 namespace VAECaves
 {
@@ -11,8 +12,12 @@ namespace VAECaves
 
         public ThingOwner innerContainer = null;
         protected bool contentsKnown;
+        public bool scheduledToOpen = false;
         public int tickCounter = 0;
-      
+
+        public int ticksToDown = 2500;
+        public int ticksToDeath = 3750;
+
         public Building_Coccoon()
         {
             //Constructor initializes the building container
@@ -20,17 +25,21 @@ namespace VAECaves
 
         }
 
-       
+
         public override void Tick()
         {
             base.Tick();
-            this.innerContainer.ThingOwnerTick(true);
+            tickCounter++;
         }
         public override void ExposeData()
         {
             //Save all the key variables so they work on game save / load
             base.ExposeData();
             Scribe_Deep.Look<ThingOwner>(ref this.innerContainer, "innerContainer", new object[] { this });
+            Scribe_Values.Look<bool>(ref this.scheduledToOpen, "scheduledToOpen", false, false);
+            Scribe_Values.Look<int>(ref this.tickCounter, "tickCounter", 0, false);
+
+
         }
         public ThingOwner GetDirectlyHeldThings()
         {
@@ -49,6 +58,19 @@ namespace VAECaves
             //Remove ingredients from the container. 
             if (this.Map != null)
             {
+                Pawn pawn = this.innerContainer.FirstOrFallback() as Pawn;
+                if (pawn != null)
+                {
+                    if (tickCounter > this.ticksToDeath)
+                    {
+                        pawn.Kill(null);
+                    } else if (tickCounter > this.ticksToDown)
+                    {
+                        HealthUtility.DamageUntilDowned(pawn);
+                    }
+
+                }
+
                 this.innerContainer.TryDropAll(this.Position, base.Map, ThingPlaceMode.Near, null, null);
             }
         }
@@ -78,7 +100,11 @@ namespace VAECaves
                 }
                 SoundDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(this.Position, this.Map, false));
             }
-
+            CoccoonsAndSpiderLairs_MapComponent mapComp = this.Map.GetComponent<CoccoonsAndSpiderLairs_MapComponent>();
+            if (mapComp != null)
+            {
+                mapComp.RemoveObjectFromMap(this);
+            }
             base.Destroy(mode);
         }
 
@@ -96,7 +122,11 @@ namespace VAECaves
                 }
                 SoundDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(this.Position, this.Map, false));
             }
-
+            CoccoonsAndSpiderLairs_MapComponent mapComp = this.Map.GetComponent<CoccoonsAndSpiderLairs_MapComponent>();
+            if (mapComp != null)
+            {
+                mapComp.RemoveObjectFromMap(this);
+            }
             base.Kill(dinfo, exactCulprit);
         }
 
@@ -133,18 +163,56 @@ namespace VAECaves
             return false;
         }
 
-        
+
 
         public override string GetInspectString()
         {
-            string stomachContents = "";
+            if (!scheduledToOpen) {
+                if (tickCounter > this.ticksToDeath)
+                {
+                    return "VAE_CoccoonDeath".Translate();
+                }
+                else if (tickCounter > this.ticksToDown)
+                {
+                    return "VAE_CoccoonCritical".Translate();
+                }
+                else
+                {
+                    return "VAE_CoccoonHurt".Translate();
+                }
+            } else {
+                return "VAE_Scheduled".Translate();
+            }
 
-            
-
-            return base.GetInspectString() + stomachContents;
+          
         }
 
-
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+            foreach (Gizmo gizmo in base.GetGizmos())
+            {
+                yield return gizmo;
+            }
+            if (!scheduledToOpen)
+            {
+                yield return new Command_Action
+                {
+                    defaultLabel = "VAE_OpenCoccoon".Translate(),
+                    defaultDesc = "VAE_OpenCoccoonDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("UI/VAE_RemoveCocoon", true),
+                    action = delegate ()
+                    {
+                        CoccoonsAndSpiderLairs_MapComponent mapComp = this.Map.GetComponent<CoccoonsAndSpiderLairs_MapComponent>();
+                        if (mapComp != null)
+                        {
+                            mapComp.AddObjectToMap(this);
+                            scheduledToOpen = true;
+                        }
+                    }
+                };
+            }
+            yield break;
+        }
 
 
     }

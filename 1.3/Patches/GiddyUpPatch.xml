@@ -24,6 +24,14 @@
 								</li>
 							</value>
 						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName = "VAECaves_AncientGiantSpider"]/comps</xpath>
+							<value>
+								<li Class="GiddyUpCore.CompProperties_Mount">
+									<isException>true</isException>
+								</li>
+							</value>
+						</li>
 				
 			</operations>
 		</match>

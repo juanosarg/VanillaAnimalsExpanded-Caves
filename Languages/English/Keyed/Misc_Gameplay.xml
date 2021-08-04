@@ -7,7 +7,12 @@
 	<VAE_HulkRips>A maddened Hulk rips {0}'s {1}!</VAE_HulkRips>
 	<VAE_LetterLabelInsectoidHulk>Rampaging Hulk</VAE_LetterLabelInsectoidHulk>
 	<VAE_LetterInsectoidHulk>A rampaging Insectoid Hulk is nearby!\n\nAccompanied by hostile insectoids, this creature has the ability to knock down walls and doors if it comes close to them. It will try to assault your colony and engage your colonists in a very dangerous close quarters combat.</VAE_LetterInsectoidHulk>
-	
+	<VAE_OpenCoccoon>Open coccoon</VAE_OpenCoccoon>
+	<VAE_OpenCoccoonDesc>Open coccoon to free a trapped colonist or animal</VAE_OpenCoccoonDesc>
+	<VAE_Scheduled>This coccoon has been scheduled to be opened by a colonist</VAE_Scheduled>
+	<VAE_CoccoonHurt>The ocupant of this coccoon is hurt, open the coccoon fast to prevent further damage!</VAE_CoccoonHurt>
+	<VAE_CoccoonCritical>The ocupant of this coccoon is critically injured, open the coccoon fast to prevent further damage!</VAE_CoccoonCritical>
+	<VAE_CoccoonDeath>The ocupant of this coccoon is dead</VAE_CoccoonDeath>
 
        
 

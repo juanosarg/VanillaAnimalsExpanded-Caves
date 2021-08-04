@@ -42,6 +42,35 @@
 					</value>
 				</li>
 				
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "VAECaves_GiantSpider"]</xpath>
+					<value>
+
+					<butcherProducts>
+						<VFEI_Chitin>60</VFEI_Chitin>
+					</butcherProducts>
+				
+
+
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "VAECaves_AncientGiantSpider"]</xpath>
+					<value>
+
+					<butcherProducts>
+						<VFEI_Chitin>200</VFEI_Chitin>
+					</butcherProducts>
+				
+
+
+
+					</value>
+				</li>
+				
 				
 				
 				

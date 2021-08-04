@@ -1,52 +1,107 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- 
-  
-  <ThingDef ParentName="BuildingNaturalBase">
-    <defName>VAECaves_Coccoon</defName>
-    <label>spider coccoon</label>
-    <description>A spider coccoon. It might contain prey.</description>
-    <thingClass>VAECaves.Building_Coccoon</thingClass>
-    <graphicData>
-      <texPath>Things/Building/VAE_WebCocoon</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(1,1)</drawSize>
-     
-    </graphicData>
-    <size>(1,1)</size>
-    <pathCost>42</pathCost>
-    <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.5</fillPercent>
-    <tickerType>Normal</tickerType>
-    <canOverlapZones>false</canOverlapZones>
-   
-    <building>
-      <ai_chillDestination>false</ai_chillDestination>
-      <preventDeteriorationInside>false</preventDeteriorationInside>
-      <deconstructible>false</deconstructible>
-       <claimable>false</claimable>
-    </building>
-    <statBases>
-      <WorkToBuild>2400</WorkToBuild>
-      <MaxHitPoints>250</MaxHitPoints>
-      <Flammability>2.0</Flammability>
-      
-      <Beauty>0</Beauty>
-    </statBases>
-    
-    <inspectorTabs>
-     
-      <li>ITab_ContentsCasket</li>
-    </inspectorTabs>
-   
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <blockWind>true</blockWind>
-  
-   
-  </ThingDef>
 
- 
+
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VAECaves_Coccoon</defName>
+		<label>spider coccoon</label>
+		<description>A spider coccoon. It might contain prey.</description>
+		<thingClass>VAECaves.Building_Coccoon</thingClass>
+		<graphicData>
+			<texPath>Things/Building/VAE_WebCocoon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+
+		</graphicData>
+		<size>(1,1)</size>
+		<pathCost>42</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<preventDeteriorationInside>false</preventDeteriorationInside>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+
+			<Beauty>0</Beauty>
+		</statBases>
+
+
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+
+
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VAECaves_SpiderLair</defName>
+		<label>spider lair</label>
+		<description>A spider lair.</description>
+		<thingClass>VAECaves.Building_SpiderLair</thingClass>
+		<graphicData>
+			<texPath>Things/Building/VAE_AncientSpiderLair</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+
+		</graphicData>
+		<size>(3,3)</size>
+		<pathCost>42</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>    
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>2500</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+
+			<Beauty>0</Beauty>
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>InsectJelly</thingToSpawn>
+				<spawnCount>20</spawnCount>
+				<spawnIntervalRange>26000~30000</spawnIntervalRange>
+				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<spawnForbidden>true</spawnForbidden>
+				<saveKeysPrefix>jelly</saveKeysPrefix>
+			</li>
+			<li Class="CompProperties_SpawnerFilth">
+				<filthDef>Filth_Slime</filthDef>
+				<spawnCountOnSpawn>10</spawnCountOnSpawn>
+				<spawnMtbHours>4</spawnMtbHours>
+				<spawnRadius>5</spawnRadius>
+			</li>
+			<li Class="CompProperties_SelfhealHitpoints">
+				<ticksPerHeal>6000</ticksPerHeal>
+				<!-- 60k ticks = 1 day, 10 hp per day -->
+			</li>
+		</comps>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+
+
+	</ThingDef>
+
+
 
 </Defs>

@@ -27,14 +27,7 @@
 				<pawnToTurnInto>VAECaves_GiantSpider</pawnToTurnInto>
 
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_EnrageOtherPawns">
-				<pawnkinddefsToAffect>
-					<li>VAECaves_GiantSpider</li>
-					<li>VAECaves_AncientGiantSpider</li>
-					<li>VAECaves_GiantSpiderHatchling</li>
-				</pawnkinddefsToAffect>
-
-			</li>
+			
 
 		</comps>
 		<tools>

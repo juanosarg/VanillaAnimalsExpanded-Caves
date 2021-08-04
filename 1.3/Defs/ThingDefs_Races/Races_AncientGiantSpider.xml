@@ -31,7 +31,31 @@
 				</pawnkinddefsToAffect>
 
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Infecter">
+				<infectionChance>95</infectionChance>
+				<worsenExistingInfection>true</worsenExistingInfection>
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>60</rateInTicks>
 
+			</li>
+			<li Class="VAECaves.CompProperties_BuildSpiderLair">
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
+
+				<customThingToEat>
+
+					<li>InsectJelly</li>					
+
+				</customThingToEat>
+				<nutrition>1</nutrition>				
+				<fullyDestroyThing>false</fullyDestroyThing>
+				<percentageOfDestruction>0.2</percentageOfDestruction>
+				<needsWater>false</needsWater>
+
+			</li>
 
 		</comps>
 		<tools>
@@ -42,6 +66,24 @@
 					<li>VAE_CoccoonBite</li>
 				</capacities>
 				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>VAE_InfectedMandibles</li>
+				</capacities>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -83,7 +125,7 @@
 			</wildBiomes>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
-			<foodType>OmnivoreAnimal, AnimalProduct</foodType>
+			<foodType>OmnivoreAnimal</foodType>
 			<predator>false</predator>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>

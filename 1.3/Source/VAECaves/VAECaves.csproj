@@ -295,8 +295,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\JobDrivers\JobDriver_BuildSpiderLair.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_LeaveMap.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_OpenCoccoon.cs" />
+    <Compile Include="AI\WorkGivers\WorkGiver_OpenCoccoon.cs" />
+    <Compile Include="Building\Building_SpiderLair.cs" />
     <Compile Include="Building\Building_Coccoon.cs" />
+    <Compile Include="Comps\CompBuildSpiderLair.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_BuildSpiderLair.cs" />
     <Compile Include="Damage\DamageWorker_CoccoonBite.cs" />
     <Compile Include="Damage\DamageWorker_TwoArmSlam.cs" />
     <Compile Include="HarmonyPatches\Patch_WildAnimalSpawner.cs" />
@@ -306,6 +312,7 @@
     <Compile Include="Hediffs\Properties\HediffCompProperties_ViciousAttack.cs" />
     <Compile Include="HarmonyPatches\VAECaves.cs" />
     <Compile Include="Incidents\IncidentWorker_Hulk.cs" />
+    <Compile Include="MapComponents\OpenableCoccoons_MapComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
