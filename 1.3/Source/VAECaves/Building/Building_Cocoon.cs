@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace VAECaves
 {
-    public class Building_Coccoon : Building, IThingHolder
+    public class Building_Cocoon : Building, IThingHolder
     {
 
         public ThingOwner innerContainer = null;
@@ -18,7 +18,7 @@ namespace VAECaves
         public int ticksToDown = 2500;
         public int ticksToDeath = 3750;
 
-        public Building_Coccoon()
+        public Building_Cocoon()
         {
             //Constructor initializes the building container
             this.innerContainer = new ThingOwner<Thing>(this, false, LookMode.Deep);
@@ -100,7 +100,7 @@ namespace VAECaves
                 }
                 SoundDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(this.Position, this.Map, false));
             }
-            CoccoonsAndSpiderLairs_MapComponent mapComp = this.Map.GetComponent<CoccoonsAndSpiderLairs_MapComponent>();
+            CocoonsAndSpiderLairs_MapComponent mapComp = this.Map.GetComponent<CocoonsAndSpiderLairs_MapComponent>();
             if (mapComp != null)
             {
                 mapComp.RemoveObjectFromMap(this);
@@ -122,7 +122,7 @@ namespace VAECaves
                 }
                 SoundDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(this.Position, this.Map, false));
             }
-            CoccoonsAndSpiderLairs_MapComponent mapComp = this.Map.GetComponent<CoccoonsAndSpiderLairs_MapComponent>();
+            CocoonsAndSpiderLairs_MapComponent mapComp = this.Map.GetComponent<CocoonsAndSpiderLairs_MapComponent>();
             if (mapComp != null)
             {
                 mapComp.RemoveObjectFromMap(this);
@@ -170,15 +170,15 @@ namespace VAECaves
             if (!scheduledToOpen) {
                 if (tickCounter > this.ticksToDeath)
                 {
-                    return "VAE_CoccoonDeath".Translate();
+                    return "VAE_CocoonDeath".Translate();
                 }
                 else if (tickCounter > this.ticksToDown)
                 {
-                    return "VAE_CoccoonCritical".Translate();
+                    return "VAE_CocoonCritical".Translate();
                 }
                 else
                 {
-                    return "VAE_CoccoonHurt".Translate();
+                    return "VAE_CocoonHurt".Translate();
                 }
             } else {
                 return "VAE_Scheduled".Translate();
@@ -197,12 +197,12 @@ namespace VAECaves
             {
                 yield return new Command_Action
                 {
-                    defaultLabel = "VAE_OpenCoccoon".Translate(),
-                    defaultDesc = "VAE_OpenCoccoonDesc".Translate(),
+                    defaultLabel = "VAE_OpenCocoon".Translate(),
+                    defaultDesc = "VAE_OpenCocoonDesc".Translate(),
                     icon = ContentFinder<Texture2D>.Get("UI/VAE_RemoveCocoon", true),
                     action = delegate ()
                     {
-                        CoccoonsAndSpiderLairs_MapComponent mapComp = this.Map.GetComponent<CoccoonsAndSpiderLairs_MapComponent>();
+                        CocoonsAndSpiderLairs_MapComponent mapComp = this.Map.GetComponent<CocoonsAndSpiderLairs_MapComponent>();
                         if (mapComp != null)
                         {
                             mapComp.AddObjectToMap(this);

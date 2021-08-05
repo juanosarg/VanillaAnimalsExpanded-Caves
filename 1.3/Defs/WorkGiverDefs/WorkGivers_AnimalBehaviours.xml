@@ -5,12 +5,12 @@
 
 	
 	<WorkGiverDef>
-		<defName>VAE_DestroyCoccoons</defName>
-		<label>destroy coccoons</label>
-		<giverClass>VAECaves.WorkGiver_OpenCoccoon</giverClass>
+		<defName>VAE_DestroyCocoons</defName>
+		<label>destroy cocoons</label>
+		<giverClass>VAECaves.WorkGiver_OpenCocoon</giverClass>
 		<workType>Hauling</workType>
-		<verb>destroy coccoons</verb>
-		<gerund>destroying coccoons</gerund>
+		<verb>destroy cocoons</verb>
+		<gerund>destroying cocoons</gerund>
 		<priorityInType>85</priorityInType>
 		<requiredCapacities>
 		  <li>Manipulation</li>

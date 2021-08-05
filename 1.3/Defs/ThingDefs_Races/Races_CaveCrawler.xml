@@ -25,6 +25,9 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Untameable">
+				
+			</li>
 		</comps>
 		<tools>
 			<li>

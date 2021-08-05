@@ -4,10 +4,51 @@
 
 
 	<ThingDef ParentName="BuildingNaturalBase">
-		<defName>VAECaves_Coccoon</defName>
-		<label>spider coccoon</label>
-		<description>A spider coccoon. It might contain prey.</description>
-		<thingClass>VAECaves.Building_Coccoon</thingClass>
+		<defName>VAECaves_Cocoon</defName>
+		<label>spider cocoon</label>
+		<description>A spider cocoon. It might contain prey.</description>
+		<thingClass>VAECaves.Building_Cocoon</thingClass>
+		<graphicData>
+			<texPath>Things/Building/VAE_WebCocoon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+
+		</graphicData>
+		<size>(1,1)</size>
+		<pathCost>42</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<preventDeteriorationInside>false</preventDeteriorationInside>
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+
+			<Beauty>0</Beauty>
+		</statBases>
+
+
+
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+
+
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VAECaves_EmptyCocoon</defName>
+		<label>empty spider cocoon</label>
+		<description>An empty spider cocoon.</description>
+		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/VAE_WebCocoon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -95,6 +136,45 @@
 				<!-- 60k ticks = 1 day, 10 hp per day -->
 			</li>
 		</comps>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<blockWind>true</blockWind>
+
+
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingNaturalBase">
+		<defName>VAECaves_SpiderEggs</defName>
+		<label>spider eggs</label>
+		<description>Spider eggs.</description>
+		<thingClass>VAECaves.Building_SpiderEggs</thingClass>
+		<graphicData>
+			<texPath>Things/Building/VAE_AncientSpiderLair</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+
+		</graphicData>
+		<size>(1,1)</size>
+		<pathCost>42</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>    
+			<deconstructible>false</deconstructible>
+			<claimable>false</claimable>
+		</building>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+
+			<Beauty>-10</Beauty>
+		</statBases>
+
+		
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<blockWind>true</blockWind>

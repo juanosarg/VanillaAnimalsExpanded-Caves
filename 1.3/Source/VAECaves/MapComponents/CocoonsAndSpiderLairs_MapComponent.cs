@@ -9,7 +9,7 @@ using RimWorld.Planet;
 
 namespace VAECaves
 {
-    public class CoccoonsAndSpiderLairs_MapComponent : MapComponent
+    public class CocoonsAndSpiderLairs_MapComponent : MapComponent
     {
 
         //This class receives calls when a new object appears on the map, storing or deleting it from a List
@@ -27,7 +27,7 @@ namespace VAECaves
             Scribe_Collections.Look<Thing>(ref this.spiderLairsInMap, true, "spiderLairsInMap", LookMode.Reference);
 
         }
-        public CoccoonsAndSpiderLairs_MapComponent(Map map) : base(map)
+        public CocoonsAndSpiderLairs_MapComponent(Map map) : base(map)
         {
 
         }

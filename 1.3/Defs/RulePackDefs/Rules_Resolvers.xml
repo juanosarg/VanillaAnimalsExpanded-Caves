@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  <RuleDef>
+    <defName>VAE_SpawnHuntingMonsters</defName>
+    <symbol>VAE_SpawnHuntingMonstersSymbol</symbol>
+    <resolvers>
+      <li Class="VAECaves.SymbolResolver_SpawnHuntingMonsters">
+        <minRectSize>(8, 8)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  
+ 
+  
+</Defs>

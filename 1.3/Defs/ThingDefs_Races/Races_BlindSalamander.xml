@@ -209,31 +209,31 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
-					<drawSize>1.3</drawSize>
+					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_Dessicated_BlindSalamander</texPath>
-					<drawSize>1.3</drawSize>
+					<drawSize>1.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
-					<drawSize>1.5</drawSize>
+					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_Dessicated_BlindSalamander</texPath>
-					<drawSize>1.5</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
-					<drawSize>1.75</drawSize>
+					<drawSize>2.25</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_Dessicated_BlindSalamander</texPath>
-					<drawSize>1.75</drawSize>
+					<drawSize>2.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

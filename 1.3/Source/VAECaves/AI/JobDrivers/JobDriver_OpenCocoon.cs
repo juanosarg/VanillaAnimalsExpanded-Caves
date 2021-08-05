@@ -8,7 +8,7 @@ using RimWorld;
 
 namespace VAECaves
 {
-    public class JobDriver_OpenCoccoon : JobDriver
+    public class JobDriver_OpenCocoon : JobDriver
     {
 
 

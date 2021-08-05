@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <QuestScriptDef>
+    <defName>VAE_Util_GetDefaultRewardValueFromPointsIncreased</defName>
+    <root Class="QuestNode_EvaluateSimpleCurve">
+      <value>$points</value>
+      <storeAs>rewardValue</storeAs>
+      <curve>
+        <points>
+          <li>1000, 1500</li>
+          <li>2500, 2800</li>
+          <li>4800, 5000</li>
+          <li>6000, 6500</li>
+          <li>7000, 7000</li>
+        </points>
+      </curve>
+    </root>
+  </QuestScriptDef>
+
+ 
+
+</Defs>

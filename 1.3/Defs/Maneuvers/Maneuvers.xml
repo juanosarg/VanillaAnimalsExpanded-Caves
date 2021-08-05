@@ -68,11 +68,11 @@
 		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
 	<ManeuverDef>
-		<defName>VAE_CoccoonBite</defName>
-		<requiredCapacity>VAE_CoccoonBite</requiredCapacity>
+		<defName>VAE_CocoonBite</defName>
+		<requiredCapacity>VAE_CocoonBite</requiredCapacity>
 		<verb>
 			<verbClass>Verb_MeleeAttackDamage</verbClass>
-			<meleeDamageDef>VAE_CoccoonBite</meleeDamageDef>
+			<meleeDamageDef>VAE_CocoonBite</meleeDamageDef>
 		</verb>
 		<logEntryDef>MeleeAttack</logEntryDef>
 		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>

@@ -7,190 +7,158 @@
 
 		<match Class="PatchOperationSequence">
 			<operations>
-<!--
+
 				<li Class="PatchOperationAdd">
 
 					<xpath>/Defs/RecipeDef[@Name = "OldWoundsAnimal"]/recipeUsers</xpath>
 					<value>
 
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>
-
+						<li>VAECaves_CaveBear</li>
+						<li>VAECaves_GiantSpider</li>
+						<li>VAECaves_GiantSpiderHatchling</li>
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>
 
 
 					</value>
 				</li>
 
-			
-			<li Class="PatchOperationAdd"></li>
-				<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalStomach"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>
 
-				</value>
-			</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalStomach"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
+						<li>VAECaves_GiantSpider</li>
+						<li>VAECaves_GiantSpiderHatchling</li>
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalKidney"]/recipeUsers</xpath>
-				<value>
-<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>
-				</value>
-			</li>
+					</value>
+				</li>
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLiver"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>
-				</value>
-			</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalKidney"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLung"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>			
-				</value>
-			</li>
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>
+					</value>
+				</li>
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalHeart"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>				
-				</value>
-			</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLiver"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>				
-				</value>
-			</li>
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>
+					</value>
+				</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "InstallSpineAnimalBionic" or defName ="InstallSpineAnimalSimple"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>			
-				</value>
-			</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLung"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
+
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>	
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalHeart"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
+						<li>VAECaves_GiantSpider</li>
+						<li>VAECaves_GiantSpiderHatchling</li>
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>			
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
+						<li>VAECaves_GiantSpider</li>
+						<li>VAECaves_GiantSpiderHatchling</li>
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>		
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "InstallSpineAnimalBionic" or defName ="InstallSpineAnimalSimple"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
+
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>
+					</value>
+				</li>
 
 
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/RecipeDef[defName = "InstallJawAnimalBionic" or defName ="InstallJawAnimalSimple"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>				
-				</value>
-			</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "InstallJawAnimalBionic" or defName ="InstallJawAnimalSimple"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
+						<li>VAECaves_GiantSpider</li>
+						<li>VAECaves_GiantSpiderHatchling</li>
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>			
+					</value>
+				</li>
 
 
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/RecipeDef[defName = "InstallNoseAnimalSimple"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>			
-				</value>
-			</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "InstallNoseAnimalSimple"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
+						<li>VAECaves_GiantSpider</li>
+						<li>VAECaves_GiantSpiderHatchling</li>
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>
+					</value>
+				</li>
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/RecipeDef[defName = "InstallBionicEyeAnimal"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>			
-				</value>
-			</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicEyeAnimal"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
+						<li>VAECaves_GiantSpider</li>
+						<li>VAECaves_GiantSpiderHatchling</li>
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>		
+					</value>
+				</li>
 
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/RecipeDef[defName = "InstallEarAnimalSimple" or defName ="InstallEarAnimalBionic"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>		
-				</value>
-			</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "InstallEarAnimalSimple" or defName ="InstallEarAnimalBionic"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
+
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>
+					</value>
+				</li>
 
 
 
 
-			
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/RecipeDef[defName = "InstallPegLegAnimal" or defName ="InstallSimpleProstheticLegAnimal" or defName ="InstallBionicLegAnimal"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>
-					<li>AEXP_Giraffe</li>
-					<li>AEXP_Hippopotamus</li>
-					<li>AEXP_Zebra</li>
-					<li>AEXP_Wildebeest</li>
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>						
-				</value>
-			</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "InstallPegLegAnimal" or defName ="InstallSimpleProstheticLegAnimal" or defName ="InstallBionicLegAnimal"]/recipeUsers</xpath>
+					<value>
+						<li>VAECaves_CaveBear</li>
+						<li>VAECaves_GiantSpider</li>
+						<li>VAECaves_GiantSpiderHatchling</li>
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>			
+					</value>
+				</li>
 
 
 
@@ -198,19 +166,19 @@
 
 
 
-			
-			<li Class="PatchOperationAdd"> 
-				<xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
-				<value>
-					<li>AEXP_Coyote</li>										
-					<li>AEXP_Crocodile</li>
-					<li>AEXP_Cheetah</li>		
-				</value>
-			</li>
--->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
+					<value>
+
+						<li>VAECaves_Wyrm</li>
+						<li>VAECaves_BlindSalamander</li>	
+					</value>
+				</li>
 
 
-		</operations>
+
+			</operations>
 		</match>
 	</Operation>
 

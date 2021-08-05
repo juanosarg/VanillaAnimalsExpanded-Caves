@@ -36,7 +36,7 @@
 			<li>
 				<label>mandibles</label>
 				<capacities>
-					<li>VAE_CoccoonBite</li>
+					<li>VAE_CocoonBite</li>
 				</capacities>
 				<power>10</power>
 				<cooldownTime>2</cooldownTime>
@@ -64,20 +64,7 @@
 			</li>
 		</tools>
 		<race>
-			<wildBiomes>
-				<ColdBog>0.005</ColdBog>
-				<BorealForest>0.005</BorealForest>
-				<Tundra>0.005</Tundra>				
-				<IceSheet>0.005</IceSheet>
-				<SeaIce>0.005</SeaIce>
-				<TemperateSwamp>0.005</TemperateSwamp>
-				<TemperateForest>0.005</TemperateForest>		
-				<TropicalSwamp>0.005</TropicalSwamp>					
-				<TropicalRainforest>0.005</TropicalRainforest>
-				<AridShrubland>0.005</AridShrubland>
-				<Desert>0.005</Desert>
-				<ExtremeDesert>0.005</ExtremeDesert>					
-			</wildBiomes>
+			
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<foodType>CarnivoreAnimal</foodType>

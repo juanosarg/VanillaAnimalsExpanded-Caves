@@ -29,8 +29,8 @@
 	</ToolCapacityDef>
 	
 	<ToolCapacityDef>
-		<defName>VAE_CoccoonBite</defName>
-		<label>coccoon bite</label>
+		<defName>VAE_CocoonBite</defName>
+		<label>cocoon bite</label>
 	</ToolCapacityDef>
 	
 	<ToolCapacityDef>

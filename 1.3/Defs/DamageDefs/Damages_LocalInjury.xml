@@ -89,9 +89,9 @@
 	</DamageDef>
 	
 	<DamageDef ParentName="Bite">
-		<defName>VAE_CoccoonBite</defName>
-		<label>coccoon bite</label>
-		<workerClass>VAECaves.DamageWorker_CoccoonBite</workerClass>
+		<defName>VAE_CocoonBite</defName>
+		<label>cocoon bite</label>
+		<workerClass>VAECaves.DamageWorker_CocoonBite</workerClass>
 		<additionalHediffs>
 			<li>
 				<hediff>VAE_SilkCovered</hediff>

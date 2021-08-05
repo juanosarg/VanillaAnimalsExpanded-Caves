@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+   <VAECaves.VAEQuestMapSpawnsDef>
+      <defName>VAE_SpawnSpiderThings</defName>
+      <thingDef>VAECaves_SpiderLair</thingDef>
+      <allowOnWater>false</allowOnWater>
+	  <numberToSpawn>3</numberToSpawn>
+   	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
+	   <terrainValidationDisallowed>
+         
+		 <li>WaterDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterShallow</li>
+		 <li>WaterOceanShallow</li>
+		<li>WaterMovingShallow</li>
+
+      </terrainValidationDisallowed>
+   </VAECaves.VAEQuestMapSpawnsDef>
+   
+   <VAECaves.VAEQuestMapSpawnsDef>
+      <defName>VAE_SpawnSpiderThingsCocoons</defName>
+      <thingDef>VAECaves_EmptyCocoon</thingDef>
+      <allowOnWater>false</allowOnWater>
+	  <numberToSpawn>30</numberToSpawn>
+   	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
+	   <terrainValidationDisallowed>
+         
+		 <li>WaterDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterShallow</li>
+		 <li>WaterOceanShallow</li>
+		<li>WaterMovingShallow</li>
+
+      </terrainValidationDisallowed>
+   </VAECaves.VAEQuestMapSpawnsDef>
+   
+   <VAECaves.VAEQuestMapSpawnsDef>
+      <defName>VAE_SpawnSpiderThingsHatchlings</defName>
+      <thingDef>VAECaves_GiantSpiderHatchling</thingDef>
+      <allowOnWater>true</allowOnWater>
+	  <isPawn>true</isPawn>
+	  <numberToSpawnRandom>1~5</numberToSpawnRandom>
+   	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
+	   <terrainValidationDisallowed>
+         
+		 <li>WaterDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterOceanDeep</li>
+		
+
+      </terrainValidationDisallowed>
+   </VAECaves.VAEQuestMapSpawnsDef>
+   
+   <VAECaves.VAEQuestMapSpawnsDef>
+      <defName>VAE_SpawnSpiderThingsAdults</defName>
+      <thingDef>VAECaves_GiantSpider</thingDef>
+      <allowOnWater>true</allowOnWater>
+	  <numberToSpawnRandom>1~5</numberToSpawnRandom>
+	  <ifPawnGoManhunter>true</ifPawnGoManhunter>
+	  <isPawn>true</isPawn>
+   	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
+	   <terrainValidationDisallowed>
+         
+		 <li>WaterDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterOceanDeep</li>
+		
+
+      </terrainValidationDisallowed>
+   </VAECaves.VAEQuestMapSpawnsDef>
+   
+   
+   
+  
+
+   
+</Defs>

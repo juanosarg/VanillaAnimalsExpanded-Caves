@@ -6,12 +6,12 @@ using System.Collections.Generic;
 
 namespace VAECaves
 {
-    public class WorkGiver_OpenCoccoon : WorkGiver_Scanner
+    public class WorkGiver_OpenCocoon : WorkGiver_Scanner
     {
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
 
-            return pawn.Map.GetComponent<CoccoonsAndSpiderLairs_MapComponent>().objects_InMap;
+            return pawn.Map.GetComponent<CocoonsAndSpiderLairs_MapComponent>().objects_InMap;
 
 
         }
@@ -26,9 +26,9 @@ namespace VAECaves
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            Building_Coccoon coccoon = t as Building_Coccoon;
+            Building_Cocoon cocoon = t as Building_Cocoon;
             bool result;
-            if (t == null || t.IsBurning()|| !coccoon.scheduledToOpen)
+            if (t == null || t.IsBurning()|| !cocoon.scheduledToOpen)
             {
                 result = false;
             }
@@ -52,7 +52,7 @@ namespace VAECaves
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            return new Job(DefDatabase<JobDef>.GetNamed("VAECaves_OpenCoccoon", true), t);
+            return new Job(DefDatabase<JobDef>.GetNamed("VAECaves_OpenCocoon", true), t);
         }
     }
 }

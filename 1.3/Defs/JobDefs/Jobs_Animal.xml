@@ -10,9 +10,9 @@
 	</JobDef>
 	
 	<JobDef>
-		<defName>VAECaves_OpenCoccoon</defName>
-		<driverClass>VAECaves.JobDriver_OpenCoccoon</driverClass>
-		<reportString>opening coccoon.</reportString>
+		<defName>VAECaves_OpenCocoon</defName>
+		<driverClass>VAECaves.JobDriver_OpenCocoon</driverClass>
+		<reportString>opening cocoon.</reportString>
 		
 	</JobDef>
 	
@@ -20,6 +20,13 @@
 		<defName>VAECaves_BuildSpiderLair</defName>
 		<driverClass>VAECaves.JobDriver_BuildSpiderLair</driverClass>
 		<reportString>building spider lair.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>VAECaves_CreateEggs</defName>
+		<driverClass>VAECaves.JobDriver_CreateEggs</driverClass>
+		<reportString>laying spider eggs.</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 

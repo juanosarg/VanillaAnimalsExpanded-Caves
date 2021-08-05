@@ -296,24 +296,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI\JobDrivers\JobDriver_BuildSpiderLair.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_CreateEggs.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_LeaveMap.cs" />
-    <Compile Include="AI\JobDrivers\JobDriver_OpenCoccoon.cs" />
-    <Compile Include="AI\WorkGivers\WorkGiver_OpenCoccoon.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_OpenCocoon.cs" />
+    <Compile Include="AI\LordJobs\LordJob_LongRanged.cs" />
+    <Compile Include="AI\WorkGivers\WorkGiver_OpenCocoon.cs" />
+    <Compile Include="Building\Building_SpiderEggs.cs" />
     <Compile Include="Building\Building_SpiderLair.cs" />
-    <Compile Include="Building\Building_Coccoon.cs" />
+    <Compile Include="Building\Building_Cocoon.cs" />
     <Compile Include="Comps\CompBuildSpiderLair.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_BuildSpiderLair.cs" />
-    <Compile Include="Damage\DamageWorker_CoccoonBite.cs" />
+    <Compile Include="Damage\DamageWorker_CocoonBite.cs" />
     <Compile Include="Damage\DamageWorker_TwoArmSlam.cs" />
+    <Compile Include="Defs\VAEQuestMapSpawnsDef.cs" />
     <Compile Include="HarmonyPatches\Patch_WildAnimalSpawner.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
+    <Compile Include="HarmonyPatches\TrainableUtility_TamenessCanDecay.cs" />
     <Compile Include="Hediffs\HediffComp_ViciousAttack.cs" />
     <Compile Include="Hediffs\Hediff_WallBreaker.cs" />
     <Compile Include="Hediffs\Properties\HediffCompProperties_ViciousAttack.cs" />
     <Compile Include="HarmonyPatches\VAECaves.cs" />
     <Compile Include="Incidents\IncidentWorker_Hulk.cs" />
-    <Compile Include="MapComponents\OpenableCoccoons_MapComponent.cs" />
+    <Compile Include="MapComponents\HuntQuest_MapComponent.cs" />
+    <Compile Include="MapComponents\CocoonsAndSpiderLairs_MapComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quests\GenStep_MonsterEncounter_Spider.cs" />
+    <Compile Include="Quests\SymbolResolver_SpawnHuntingMonsters.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

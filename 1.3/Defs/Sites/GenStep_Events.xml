@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>  
+  
+
+  
+  <GenStepDef>
+    <defName>VAE_Spider_MonsterEncounterGen</defName>
+    <linkWithSite>VAE_Spider_MonsterEncounterCore</linkWithSite>
+    <order>805</order>
+    <genStep Class="VAECaves.GenStep_MonsterEncounter_Spider">
+    </genStep>
+  </GenStepDef>
+  
+  
+
+</Defs>

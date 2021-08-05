@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace VAECaves
 {
-    public class DamageWorker_CoccoonBite : DamageWorker_AddInjury
+    public class DamageWorker_CocoonBite : DamageWorker_AddInjury
     {
         public override DamageWorker.DamageResult Apply(DamageInfo dinfo, Thing victim)
         {
@@ -31,10 +31,10 @@ namespace VAECaves
 
         public void TryCoverPawn(Pawn pawn)
         {
-            Thing coccoon = ThingMaker.MakeThing(ThingDef.Named("VAECaves_Coccoon"), null);
-            GenSpawn.Spawn(coccoon, pawn.Position, pawn.Map, WipeMode.FullRefund);
-            Building_Coccoon coccoonAsSarcophagus = coccoon as Building_Coccoon;
-            coccoonAsSarcophagus.TryAcceptThing(pawn);
+            Thing cocoon = ThingMaker.MakeThing(ThingDef.Named("VAECaves_Cocoon"), null);
+            GenSpawn.Spawn(cocoon, pawn.Position, pawn.Map, WipeMode.FullRefund);
+            Building_Cocoon cocoonAsSarcophagus = cocoon as Building_Cocoon;
+            cocoonAsSarcophagus.TryAcceptThing(pawn);
         }
     }
 
