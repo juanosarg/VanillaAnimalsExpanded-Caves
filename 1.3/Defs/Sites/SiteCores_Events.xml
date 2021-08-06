@@ -16,7 +16,7 @@
 
 	<SitePartDef ParentName="VAE_MonsterEncounterCoreBase">
 		<defName>VAE_Spider_MonsterEncounterCore</defName>
-		<expandingIconTexture>World/WorldObjects/Sites/GenericSite</expandingIconTexture>
+		<expandingIconTexture>UI/VAE_ContractSpiderLair</expandingIconTexture>
 		<tags Inherit="False">
 			<li>VAE_Spider_MonsterEncounterCore</li>
 		</tags>

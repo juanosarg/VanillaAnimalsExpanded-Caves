@@ -10,7 +10,7 @@
 		<thingClass>VAECaves.Building_Cocoon</thingClass>
 		<graphicData>
 			<texPath>Things/Building/VAE_WebCocoon</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
 
 		</graphicData>
@@ -51,7 +51,7 @@
 		<thingClass>Building</thingClass>
 		<graphicData>
 			<texPath>Things/Building/VAE_WebCocoon</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
 
 		</graphicData>
@@ -121,13 +121,13 @@
 				<thingToSpawn>InsectJelly</thingToSpawn>
 				<spawnCount>20</spawnCount>
 				<spawnIntervalRange>26000~30000</spawnIntervalRange>
-				<spawnMaxAdjacent>40</spawnMaxAdjacent>
+				<spawnMaxAdjacent>80</spawnMaxAdjacent>
 				<spawnForbidden>true</spawnForbidden>
 				<saveKeysPrefix>jelly</saveKeysPrefix>
 			</li>
 			<li Class="CompProperties_SpawnerFilth">
-				<filthDef>Filth_Slime</filthDef>
-				<spawnCountOnSpawn>10</spawnCountOnSpawn>
+				<filthDef>VAECaves_Filth_Webs</filthDef>
+				<spawnCountOnSpawn>20</spawnCountOnSpawn>
 				<spawnMtbHours>4</spawnMtbHours>
 				<spawnRadius>5</spawnRadius>
 			</li>
@@ -149,8 +149,8 @@
 		<description>Spider eggs.</description>
 		<thingClass>VAECaves.Building_SpiderEggs</thingClass>
 		<graphicData>
-			<texPath>Things/Building/VAE_AncientSpiderLair</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/VAE_SpiderEggs</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
 
 		</graphicData>

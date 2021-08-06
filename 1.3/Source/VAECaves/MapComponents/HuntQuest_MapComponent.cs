@@ -46,25 +46,21 @@ namespace VAECaves
         public void doMapSpawns()
         {
 
-            IEnumerable<IntVec3> tmpTerrain = map.AllCells.InRandomOrder();
 
             if (monsterKindDef != null)
             {
-               
+
                 foreach (VAEQuestMapSpawnsDef element in DefDatabase<VAEQuestMapSpawnsDef>.AllDefs.Where(element => element.associatedMonster == this.monsterKindDef))
                 {
+
+                    IEnumerable<IntVec3> tmpTerrain = map.AllCells.InRandomOrder();
+
+
                     bool canSpawn = true;
                     if (spawnCounter == 0)
                     {
-                        if (element.numberToSpawnRandom != IntRange.zero)
-                        {
-                            spawnCounter = element.numberToSpawnRandom.RandomInRange;
-                        }
-                        else
-                        {
-                            spawnCounter = element.numberToSpawn;
+                        spawnCounter = Rand.RangeInclusive(element.numberToSpawn.min, element.numberToSpawn.max);
 
-                        }
                     }
                     foreach (IntVec3 c in tmpTerrain)
                     {
@@ -72,64 +68,59 @@ namespace VAECaves
                         TerrainDef terrain = c.GetTerrain(map);
 
 
+
+                        bool flagDisallowed = true;
                         foreach (string notAllowed in element.terrainValidationDisallowed)
                         {
-                            if (terrain.defName == notAllowed)
+                            if (terrain.HasTag(notAllowed))
                             {
-                                canSpawn = false;
+                                flagDisallowed = false;
                                 break;
                             }
                         }
+                        bool flagWater = true;
+                        if (!element.allowOnWater && terrain.IsWater)
+                        {
+                            flagWater = false;
 
+                        }
+
+                        canSpawn = flagDisallowed & flagWater;
                         if (canSpawn)
                         {
-                            if (element.isPawn) {
-
-
+                            if (element.isPawn)
+                            {
                                 PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named(element.thingDef.defName), null, PawnGenerationContext.NonPlayer);
                                 Pawn spider = PawnGenerator.GeneratePawn(request);
-                                GenSpawn.Spawn(spider, c,map, Rot4.South, WipeMode.Vanish, false);
+                                GenSpawn.Spawn(spider, c, map, Rot4.South, WipeMode.Vanish, false);
                                 if (element.ifPawnGoManhunter)
                                 {
-
                                     spider.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter, null, false, false, null, false, false, false);
-
                                 }
                                 spawnCounter--;
-
-
-                            } else {
+                            }
+                            else
+                            {
                                 Thing thing = (Thing)ThingMaker.MakeThing(element.thingDef, null);
                                 CellRect occupiedRect = GenAdj.OccupiedRect(c, thing.Rotation, thing.def.Size);
                                 if (occupiedRect.InBounds(map))
                                 {
-                                    GenSpawn.Spawn(thing, c, map);                                   
+                                    GenSpawn.Spawn(thing, c, map);
                                     spawnCounter--;
                                 }
                             }
-                                
-                           
 
                         }
                         if (canSpawn && spawnCounter <= 0)
                         {
+                            
                             spawnCounter = 0;
                             break;
                         }
                     }
-
-
                 }
-
-
-
             }
-               
-
-
             this.verifyFirstTime = false;
-
         }
-
     }
 }

@@ -11,11 +11,9 @@ namespace VAECaves
     {
         public ThingDef thingDef;
         public bool allowOnWater;
-        public int numberToSpawn;
-        public IntRange numberToSpawnRandom = IntRange.zero;
+        public IntRange numberToSpawn;
         public bool ifPawnGoManhunter = false;
         public bool isPawn = false;
-
         public List<string> terrainValidationDisallowed;
         public PawnKindDef associatedMonster;
 

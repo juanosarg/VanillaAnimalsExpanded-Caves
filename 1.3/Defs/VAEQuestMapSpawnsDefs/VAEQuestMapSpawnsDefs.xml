@@ -5,7 +5,7 @@
       <defName>VAE_SpawnSpiderThings</defName>
       <thingDef>VAECaves_SpiderLair</thingDef>
       <allowOnWater>false</allowOnWater>
-	  <numberToSpawn>3</numberToSpawn>
+	  <numberToSpawn>3~3</numberToSpawn>
    	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
 	   <terrainValidationDisallowed>
          
@@ -24,7 +24,7 @@
       <defName>VAE_SpawnSpiderThingsCocoons</defName>
       <thingDef>VAECaves_EmptyCocoon</thingDef>
       <allowOnWater>false</allowOnWater>
-	  <numberToSpawn>30</numberToSpawn>
+	  <numberToSpawn>30~30</numberToSpawn>
    	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
 	   <terrainValidationDisallowed>
          
@@ -44,7 +44,7 @@
       <thingDef>VAECaves_GiantSpiderHatchling</thingDef>
       <allowOnWater>true</allowOnWater>
 	  <isPawn>true</isPawn>
-	  <numberToSpawnRandom>1~5</numberToSpawnRandom>
+	  <numberToSpawn>2~5</numberToSpawn>
    	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
 	   <terrainValidationDisallowed>
          
@@ -61,7 +61,7 @@
       <defName>VAE_SpawnSpiderThingsAdults</defName>
       <thingDef>VAECaves_GiantSpider</thingDef>
       <allowOnWater>true</allowOnWater>
-	  <numberToSpawnRandom>1~5</numberToSpawnRandom>
+	  <numberToSpawn>2~5</numberToSpawn>
 	  <ifPawnGoManhunter>true</ifPawnGoManhunter>
 	  <isPawn>true</isPawn>
    	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 

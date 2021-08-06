@@ -24,7 +24,7 @@
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
 			<soundExplode>Hive_Spawn</soundExplode>
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
-			<postExplosionSpawnThingDef>Filth_Slime</postExplosionSpawnThingDef>
+			<postExplosionSpawnThingDef>VAECaves_Filth_Webs</postExplosionSpawnThingDef>
 			<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
 			<postExplosionSpawnChance>1</postExplosionSpawnChance>
 		</projectile>

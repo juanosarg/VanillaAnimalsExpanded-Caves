@@ -95,7 +95,7 @@ namespace VAECaves
                 {
                     IntVec3 c;
                     CellFinder.TryFindRandomReachableCellNear(this.Position, this.Map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
-                    FilthMaker.TryMakeFilth(c, this.Map, ThingDefOf.Filth_Slime);
+                    FilthMaker.TryMakeFilth(c, this.Map, ThingDef.Named("VAECaves_Filth_Webs"));
 
                 }
                 SoundDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(this.Position, this.Map, false));
@@ -117,7 +117,7 @@ namespace VAECaves
                 {
                     IntVec3 c;
                     CellFinder.TryFindRandomReachableCellNear(this.Position, this.Map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
-                    FilthMaker.TryMakeFilth(c, this.Map, ThingDefOf.Filth_Slime);
+                    FilthMaker.TryMakeFilth(c, this.Map, ThingDef.Named("VAECaves_Filth_Webs"));
 
                 }
                 SoundDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(this.Position, this.Map, false));

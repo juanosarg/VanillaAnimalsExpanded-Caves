@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>VAECaves_Filth_Webs</defName>
+    <label>spider webs</label>
+    <statBases>
+      <Beauty>-25</Beauty>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/VAE_Filth_Spider</texPath>
+     <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <filth>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
+    </filth>
+  </ThingDef>
+
+ 
+
+</Defs>
