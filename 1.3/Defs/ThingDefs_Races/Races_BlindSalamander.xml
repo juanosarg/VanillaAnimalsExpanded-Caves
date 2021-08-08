@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAECaves_BlindSalamander</defName>
 		<label>blind salamander</label>
-		<description>.</description>
+		<description>An amphibian that primarily or exclusively inhabits caves. Some of these animals have developed special pigmentation mutations, allowing them to have beautiful colors that are very pleasant to look at. Many people are fascinated by all the different variations, and will stop at nothing to catch them all.\n\nSpecial mechanics: There are five colour variations, with different commonalities: red and black blind salamanders are common, blue and yellow are rare, and the orange salamander is very elusive. If you tame all five colours your colonists will receive a mood boost, increased for colonists that are bound to any of the salamanders.</description>
 		<statBases>
 			<MoveSpeed>5.1</MoveSpeed>
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>

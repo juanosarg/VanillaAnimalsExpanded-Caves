@@ -90,7 +90,7 @@
 		<defName>VAE_SilkCovered</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>silk covered</label>
-		<description>This creature has been attacked by a giant spider and is partially covered in strands of adhessive silk.</description>
+		<description>This creature has been attacked by a giant spider and is partially covered in strands of adhesive silk.</description>
 		<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAECaves_InsectoidHulk</defName>
 		<label>insectoid hulk</label>
-		<description>.</description>
+		<description>Created by supremacist megacorporations for militaristic purposes, the Insectoid Hulks experiment was abandoned and existing samples were left scattered where no one would look - on rimworlds. Half insectoid, half human, mercy should not be expected from these giant, hulking siege engines. Designed to not overcome enemy defenses but remove them, Hulks’ thick chitinous armor makes them hard to kill, while their huge arms make them deadly at close quarters. It is, however, quite slow in open terrain.\n\nSpecial mechanics: The Insectoid Hulk will enter a mindless rage after killing prey, making it very dangerous. Its attacks stun its victims, and it has a nasty tendency to rip limbs out of their socket, so approaching one in close combat is akin to suicide. When sufficiently enraged, an Insectoid Hulk can even trample fortifications and doors. Lacks any pain sensitivity.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAECaves_GiantSpiderHatchling</defName>
 		<label>giant spider hatchling</label>
-		<description>.</description>
+		<description>A type of arthropod, Giant Spiders are in fact nowhere near the size of house spiders often found everywhere where humans conquered. However, similar rules apply - they lay eggs in spider lairs, sting their prey with venomous stinger and wrap it in cocoons for when the time is right to feast. They regenerate their wounds fast and are very susceptible to fire.\n\nThe Giant Spider Hatchling is an elusive, young Giant Spider that quickly grows in size. They haven’t yet developed their hunting mechanisms, however they can still disable their enemies with potent venom.\n\nSpecial mechanics: Turns into a mature Giant Spider in a little less than two days. If an Ancient Giant Spider is attacked nearby, it will go manhunter.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
@@ -35,9 +35,9 @@
 			<li>
 				<label>mandibles</label>
 				<capacities>
-					<li>Bite</li>
+					<li>VAE_VeryToxicBite</li>
 				</capacities>
-				<power>10</power>
+				<power>5</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<surpriseAttack>

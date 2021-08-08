@@ -6,7 +6,7 @@
 	<ThingDef ParentName="BuildingNaturalBase">
 		<defName>VAECaves_Cocoon</defName>
 		<label>spider cocoon</label>
-		<description>A spider cocoon. It might contain prey.</description>
+		<description>A spider cocoon. It might contain prey. If the cocoon isn't opened soon its ocupant will surely suffocate and perish.</description>
 		<thingClass>VAECaves.Building_Cocoon</thingClass>
 		<graphicData>
 			<texPath>Things/Building/VAE_WebCocoon</texPath>

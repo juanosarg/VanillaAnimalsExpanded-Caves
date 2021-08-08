@@ -7,7 +7,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAECaves_CaveBear</defName>
 		<label>cave bear</label>
-		<description>.</description>
+		<description>A huge omnivorous mammal adapted for colder climates. Bears' thick blubber and fur keep them warm in winter.\n\nWhile their usual diet consists of fish, berries, honey and scavenged meat, the cave bear is capable of using its massive strength and deadly claws to kill live prey - however they rarely do so, as they prefer to forage for much tastier treats. They are startlingly quick for such lumbering creatures.</description>
 		<statBases>
 			<MoveSpeed>4.6</MoveSpeed>
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
