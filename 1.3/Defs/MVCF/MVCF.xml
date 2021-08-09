@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<MVCF.ModDef>
+		<defName>VAECaves_MVCF</defName>
+		<label>Vanilla Animals Expanded - Caves</label>
+		<description>Adding animal ranged attacks for Vanilla Animals Expanded - Caves creatures</description>
+		<Features>
+			<RangedAnimals>true</RangedAnimals>
+			<IntegratedToggle>true</IntegratedToggle>
+		</Features>
+	</MVCF.ModDef>
+
+
+
+
+
+
+</Defs>

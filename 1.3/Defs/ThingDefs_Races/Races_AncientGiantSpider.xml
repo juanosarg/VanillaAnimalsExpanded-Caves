@@ -21,7 +21,7 @@
 
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_ChangeDefIfNotUnique">
-				<defToChangeTo>Rat</defToChangeTo>
+				<defToChangeTo>VAECaves_GiantSpider</defToChangeTo>
 
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_EnrageOtherPawns">
