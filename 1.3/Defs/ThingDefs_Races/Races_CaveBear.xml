@@ -23,7 +23,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>17</power>
+				<power>18.36</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -40,7 +40,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>17</power>
+				<power>18.36</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -56,7 +56,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>23.6</power>
+				<power>25.48</power>
 				<cooldownTime>2.6</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.5</chanceFactor>
@@ -74,7 +74,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>11</power>
+				<power>11.88</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -115,7 +115,7 @@
 			<maxPreyBodySize>3</maxPreyBodySize>
 			<body>QuadrupedAnimalWithPaws</body>
 			<baseHungerRate>0.35</baseHungerRate>
-			<baseBodySize>2.3</baseBodySize>
+			<baseBodySize>2.5</baseBodySize>
 			<baseHealthScale>3.125</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
 			<leatherDef>Leather_Bear</leatherDef>

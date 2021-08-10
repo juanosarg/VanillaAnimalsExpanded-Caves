@@ -79,7 +79,7 @@
 			<baseBodySize>0.2</baseBodySize>
 			<baseHealthScale>0.25</baseHealthScale>
 			<baseHungerRate>0.1</baseHungerRate>
-			<foodType>VegetarianAnimal,AnimalProduct</foodType>
+			<foodType>VegetarianRoughAnimal,AnimalProduct</foodType>
 			<leatherDef>Leather_Lizard</leatherDef>
 			<wildness>0.75</wildness>
 			<useMeatFrom>Iguana</useMeatFrom>
@@ -159,6 +159,66 @@
 				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
 			</li>
 			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
+			</li>
+			<li>
 				<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderRed</texPath>
 			</li>
 			<li>
@@ -209,6 +269,16 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
+					<drawSize>1.4</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_Dessicated_BlindSalamander</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
 					<drawSize>1.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -219,21 +289,11 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_Dessicated_BlindSalamander</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_BlindSalamanderBlack</texPath>
-					<drawSize>2.25</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_BlindSalamander/VAE_Dessicated_BlindSalamander</texPath>
-					<drawSize>2.25</drawSize>
+					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
