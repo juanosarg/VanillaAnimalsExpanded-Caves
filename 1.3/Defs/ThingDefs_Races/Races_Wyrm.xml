@@ -81,18 +81,18 @@
 
 		<race>
 			<wildBiomes>
-				<BorealForest>0.001</BorealForest>
-				<IceSheet>0.001</IceSheet>
-				<Tundra>0.001</Tundra>
-				<ColdBog>0.001</ColdBog>
-				<SeaIce>0.001</SeaIce>
-				<TemperateSwamp>0.002</TemperateSwamp>
-				<TropicalSwamp>0.001</TropicalSwamp>
-				<TemperateForest>0.003</TemperateForest>
-				<TropicalRainforest>0.006</TropicalRainforest>
-				<AridShrubland>0.001</AridShrubland>
-				<Desert>0.001</Desert>
-				<ExtremeDesert>0.001</ExtremeDesert>
+				<BorealForest>0.02</BorealForest>
+				<IceSheet>0.02</IceSheet>
+				<Tundra>0.02</Tundra>
+				<ColdBog>0.02</ColdBog>
+				<SeaIce>0.02</SeaIce>
+				<TemperateSwamp>0.02</TemperateSwamp>
+				<TropicalSwamp>0.02</TropicalSwamp>
+				<TemperateForest>0.02</TemperateForest>
+				<TropicalRainforest>0.02</TropicalRainforest>
+				<AridShrubland>0.02</AridShrubland>
+				<Desert>0.02</Desert>
+				<ExtremeDesert>0.02</ExtremeDesert>
 			</wildBiomes>
 			<body>VAE_WyvernBody</body>
 			<herdAnimal>false</herdAnimal>

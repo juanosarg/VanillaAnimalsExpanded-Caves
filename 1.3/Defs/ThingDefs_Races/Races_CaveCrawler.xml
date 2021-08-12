@@ -53,18 +53,18 @@
 		</tools>
 		<race>
 		<wildBiomes>
-				<BorealForest>0.001</BorealForest>
-				<IceSheet>0.001</IceSheet>
-				<Tundra>0.001</Tundra>
-				<ColdBog>0.001</ColdBog>
-				<SeaIce>0.001</SeaIce>
-				<TemperateSwamp>0.002</TemperateSwamp>
-				<TropicalSwamp>0.001</TropicalSwamp>
-				<TemperateForest>0.005</TemperateForest>
-				<TropicalRainforest>0.003</TropicalRainforest>
-				<AridShrubland>0.002</AridShrubland>
-				<Desert>0.002</Desert>
-				<ExtremeDesert>0.002</ExtremeDesert>
+				<ColdBog>0.02</ColdBog>
+				<BorealForest>0.02</BorealForest>
+				<Tundra>0.02</Tundra>				
+				<IceSheet>0.02</IceSheet>
+				<SeaIce>0.02</SeaIce>
+				<TemperateSwamp>0.03</TemperateSwamp>
+				<TemperateForest>0.03</TemperateForest>		
+				<TropicalSwamp>0.03</TropicalSwamp>					
+				<TropicalRainforest>0.03</TropicalRainforest>
+				<AridShrubland>0.02</AridShrubland>
+				<Desert>0.02</Desert>
+				<ExtremeDesert>0.02</ExtremeDesert>		
 			</wildBiomes>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>

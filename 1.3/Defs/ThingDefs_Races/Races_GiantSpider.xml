@@ -15,6 +15,7 @@
 			<ToxicSensitivity>0</ToxicSensitivity>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
+		<receivesSignals>true</receivesSignals>
 		<comps>
 
 			<li Class="AnimalBehaviours.CompProperties_Regeneration">
@@ -30,9 +31,15 @@
 
 			</li>
 
+			<li Class="CompProperties_CanBeDormant" />
+			<li Class="CompProperties_WakeUpDormant">
+				<wakeUpOnDamage>true</wakeUpOnDamage>
+			</li>
+
+
 		</comps>
 		<tools>
-			
+
 			<li>
 				<label>mandibles</label>
 				<capacities>
@@ -50,7 +57,7 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-			
+
 			<li>
 				<label>head</label>
 				<capacities>
@@ -64,7 +71,20 @@
 			</li>
 		</tools>
 		<race>
-			
+			<wildBiomes>
+				<BorealForest>0.01</BorealForest>
+				<Tundra>0.01</Tundra>
+				<ColdBog>0.01</ColdBog>
+				<SeaIce>0.01</SeaIce>
+				<IceSheet>0.01</IceSheet>
+				<TemperateSwamp>0.01</TemperateSwamp>
+				<TropicalSwamp>0.01</TropicalSwamp>
+				<TemperateForest>0.01</TemperateForest>
+				<TropicalRainforest>0.01</TropicalRainforest>
+				<AridShrubland>0.01</AridShrubland>
+				<Desert>0.01</Desert>
+				<ExtremeDesert>0.01</ExtremeDesert>   
+			</wildBiomes>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<foodType>CarnivoreAnimal</foodType>

@@ -22,13 +22,13 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-	
+
 	<DamageDef>
 		<defName>VAE_VeryToxicBite</defName>
 		<label>virulent toxic bite</label>
 		<workerClass>DamageWorker_Stab</workerClass>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} has been stung to death.</deathMessage>
+		<deathMessage>{0} died after getting bitten by a poisonous creature.</deathMessage>
 		<hediff>Stab</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<additionalHediffs>
@@ -42,13 +42,13 @@
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
-	
+
 	<DamageDef>
 		<defName>VAE_ToxicSting</defName>
 		<label>toxic sting</label>
 		<workerClass>DamageWorker_Stab</workerClass>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} has been stung to death.</deathMessage>
+		<deathMessage>{0} has passed away due to toxic build-up.</deathMessage>
 		<hediff>Stab</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<additionalHediffs>
@@ -62,7 +62,7 @@
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
-	
+
 	<DamageDef ParentName="CutBase">
 		<defName>VAE_HulkAttack</defName>
 		<label>arm smash</label>
@@ -70,7 +70,7 @@
 			<li>
 				<hediff>VAE_StunnedByViciousAttack</hediff>
 				<severityPerDamageDealt>1</severityPerDamageDealt>
-				
+
 			</li>
 		</additionalHediffs>
 	</DamageDef>
@@ -83,11 +83,11 @@
 			<li>
 				<hediff>VAE_StunnedByViciousAttack</hediff>
 				<severityPerDamageDealt>1</severityPerDamageDealt>
-				
+
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-	
+
 	<DamageDef ParentName="Bite">
 		<defName>VAE_CocoonBite</defName>
 		<label>cocoon bite</label>
@@ -96,17 +96,44 @@
 			<li>
 				<hediff>VAE_SilkCovered</hediff>
 				<severityPerDamageDealt>1</severityPerDamageDealt>
-				
+
 			</li>
 		</additionalHediffs>
-		
+
 	</DamageDef>
-	
+
+	<DamageDef>
+		<defName>VAE_CocoonRanged</defName>
+		<label>silk projectile</label>
+		<workerClass>VAECaves.DamageWorker_CocoonRanged</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been bitten to death.</deathMessage>
+		<hediff>Crush</hediff>
+		<hediffSkin>Bruise</hediffSkin>
+		<hediffSolid>Crack</hediffSolid>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+		<additionalHediffs>
+			<li>
+				<hediff>VAE_SilkCovered</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+
+			</li>
+		</additionalHediffs>
+
+	</DamageDef>
+
+
+
+
+
 	<DamageDef ParentName="Bite">
 		<defName>VAE_InfectedMandibles</defName>
 		<label>infected mandibles</label>
 		<workerClass>AnimalBehaviours.DamageWorker_ExtraInfecter</workerClass>
-		
+
 	</DamageDef>
 
 

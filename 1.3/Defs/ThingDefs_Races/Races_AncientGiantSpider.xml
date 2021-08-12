@@ -15,6 +15,7 @@
 			<ToxicSensitivity>0</ToxicSensitivity>
 			<ComfyTemperatureMax>60</ComfyTemperatureMax>
 		</statBases>
+		<receivesSignals>true</receivesSignals>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_FixedGender">
 				<gender>Female</gender>
@@ -59,6 +60,10 @@
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_Untameable">
 				
+			</li>
+			<li Class="CompProperties_CanBeDormant" />
+			<li Class="CompProperties_WakeUpDormant">
+				<wakeUpOnDamage>true</wakeUpOnDamage>
 			</li>
 
 		</comps>

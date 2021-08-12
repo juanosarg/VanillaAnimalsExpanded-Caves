@@ -306,9 +306,11 @@
     <Compile Include="Building\Building_Cocoon.cs" />
     <Compile Include="Comps\CompBuildSpiderLair.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_BuildSpiderLair.cs" />
+    <Compile Include="Damage\DamageWorker_CocoonRanged.cs" />
     <Compile Include="Damage\DamageWorker_CocoonBite.cs" />
     <Compile Include="Damage\DamageWorker_TwoArmSlam.cs" />
     <Compile Include="Defs\VAEQuestMapSpawnsDef.cs" />
+    <Compile Include="HarmonyPatches\BiomeDef_CommonalityOfAnimal_Patch.cs" />
     <Compile Include="HarmonyPatches\Patch_WildAnimalSpawner.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
     <Compile Include="HarmonyPatches\TrainableUtility_TamenessCanDecay.cs" />
@@ -319,6 +321,9 @@
     <Compile Include="Incidents\IncidentWorker_Hulk.cs" />
     <Compile Include="MapComponents\HuntQuest_MapComponent.cs" />
     <Compile Include="MapComponents\CocoonsAndSpiderLairs_MapComponent.cs" />
+    <Compile Include="Options\SettingsHelper.cs" />
+    <Compile Include="Options\VAECaves_Settings.cs" />
+    <Compile Include="Options\VAECaves_SettingsController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quests\GenStep_MonsterEncounter_Spider.cs" />
     <Compile Include="Quests\SymbolResolver_SpawnHuntingMonsters.cs" />

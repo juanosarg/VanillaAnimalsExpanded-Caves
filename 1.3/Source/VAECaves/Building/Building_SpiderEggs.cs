@@ -40,7 +40,7 @@ namespace VAECaves
                
                 for (int i = 0; i <= numberOfHatchlings; i++)
                 {
-                    PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named("VAECaves_GiantSpiderHatchling"), null, PawnGenerationContext.NonPlayer);
+                    PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named("VAECaves_GiantSpiderHatchling"), null, PawnGenerationContext.NonPlayer,-1,true,true);
                     Pawn spider = PawnGenerator.GeneratePawn(request);
                     GenSpawn.Spawn(spider, this.Position, this.Map, Rot4.South, WipeMode.Vanish, false);
                   

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAECaves_InsectoidHulk</defName>
 		<label>insectoid hulk</label>
-		<description>Created by supremacist megacorporations for militaristic purposes, the Insectoid Hulks experiment was abandoned and existing samples were left scattered where no one would look - on rimworlds. Half insectoid, half human, mercy should not be expected from these giant, hulking siege engines. Designed to not overcome enemy defenses but remove them, Hulks’ thick chitinous armor makes them hard to kill, while their huge arms make them deadly at close quarters. It is, however, quite slow in open terrain.\n\nSpecial mechanics: The Insectoid Hulk will enter a mindless rage after killing prey, making it very dangerous. Its attacks stun its victims, and it has a nasty tendency to rip limbs out of their socket, so approaching one in close combat is akin to suicide. When sufficiently enraged, an Insectoid Hulk can even trample fortifications and doors. Lacks any pain sensitivity.</description>
+		<description>Created by supremacist megacorporations for militaristic purposes, the insectoid hulks experiment was abandoned and existing samples were left scattered where no one would look - on rimworlds. Half insectoid, half human, mercy should not be expected from these giant, hulking siege engines. Designed to not overcome enemy defenses but remove them, hulks’ thick chitinous armor makes them hard to kill, while their huge arms make them deadly at close quarters. It is, however, quite slow in open terrain.\n\nSpecial mechanics: The insectoid hulk will enter a mindless rage after killing prey, making it very dangerous. Its attacks stun its victims, and it has a nasty tendency to rip limbs out of their socket, so approaching one in close combat is akin to suicide. When sufficiently enraged, an insectoid hulk can even trample fortifications and doors. Lacks any pain sensitivity.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
@@ -74,18 +74,18 @@
 		</tools>
 		<race>
 			<wildBiomes>
-				<ColdBog>0.005</ColdBog>
-				<BorealForest>0.005</BorealForest>
-				<Tundra>0.005</Tundra>				
-				<IceSheet>0.005</IceSheet>
-				<SeaIce>0.005</SeaIce>
-				<TemperateSwamp>0.005</TemperateSwamp>
-				<TemperateForest>0.005</TemperateForest>		
-				<TropicalSwamp>0.005</TropicalSwamp>					
-				<TropicalRainforest>0.005</TropicalRainforest>
-				<AridShrubland>0.005</AridShrubland>
-				<Desert>0.005</Desert>
-				<ExtremeDesert>0.005</ExtremeDesert>					
+				<ColdBog>0.01</ColdBog>
+				<BorealForest>0.01</BorealForest>
+				<Tundra>0.01</Tundra>				
+				<IceSheet>0.01</IceSheet>
+				<SeaIce>0.01</SeaIce>
+				<TemperateSwamp>0.01</TemperateSwamp>
+				<TemperateForest>0.01</TemperateForest>		
+				<TropicalSwamp>0.01</TropicalSwamp>					
+				<TropicalRainforest>0.01</TropicalRainforest>
+				<AridShrubland>0.01</AridShrubland>
+				<Desert>0.01</Desert>
+				<ExtremeDesert>0.01</ExtremeDesert>					
 			</wildBiomes>
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>

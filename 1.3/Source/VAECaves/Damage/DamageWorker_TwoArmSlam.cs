@@ -47,7 +47,8 @@ namespace VAECaves
                         if (bodyPartRecord != null)
                         {
                             int num = (int)pawn.health.hediffSet.GetPartHealth(bodyPartRecord) + 1000;
-                            DamageInfo damageInfo = new DamageInfo(DamageDefOf.Blunt, (float)num, 999f, -1f, dinfo.Instigator, bodyPartRecord, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true);
+                            DamageInfo damageInfo = new DamageInfo(DamageDefOf.Cut, (float)num, 999f, -1f, dinfo.Instigator, bodyPartRecord, null, DamageInfo.SourceCategory.ThingOrUnknown, null, true, true);
+                            damageInfo.SetAllowDamagePropagation(false);
                             victim.TakeDamage(damageInfo);
                             if (pawn.Faction != null && pawn.Faction.IsPlayer) {
                                 Messages.Message("VAE_HulkRips".Translate(pawn.LabelCap, bodyPartRecord.customLabel), pawn, MessageTypeDefOf.NegativeEvent);

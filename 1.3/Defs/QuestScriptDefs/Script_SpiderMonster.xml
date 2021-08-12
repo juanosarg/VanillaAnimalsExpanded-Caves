@@ -26,7 +26,7 @@
     <questDescriptionRules>
       <rulesStrings>
         <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has reported that their livestock seems to be disappearing at alarming rates. A mess of silk strands is all that is often left, hinting that a ravenous nest of giant spiders is behind the disappearances.\n\n.
-		\nIf we successfully investigate this mistery, [allRewardsDescriptions]</li>
+		\nIf we successfully investigate this mystery, [allRewardsDescriptions]</li>
       </rulesStrings>
     </questDescriptionRules>
     <root Class="QuestNode_Sequence">
