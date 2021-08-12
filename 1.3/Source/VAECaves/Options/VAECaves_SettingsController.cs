@@ -14,7 +14,7 @@ namespace VAECaves
         {
             settings = GetSettings<VAECaves_Settings>();
         }
-        public override string SettingsCategory() => "Vanilla Animals Expanded - Caves, General Options";
+        public override string SettingsCategory() => "Vanilla Animals Expanded - Caves";
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
