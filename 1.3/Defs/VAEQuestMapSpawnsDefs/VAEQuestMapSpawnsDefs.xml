@@ -43,7 +43,7 @@
       <defName>VAE_SpawnSpiderThingsWebs</defName>
       <thingDef>VAECaves_Filth_Webs</thingDef>
       <allowOnWater>false</allowOnWater>
-	  <numberToSpawn>500~650</numberToSpawn>
+	  <numberToSpawn>250~300</numberToSpawn>
    	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
 	   <terrainValidationDisallowed>
          
