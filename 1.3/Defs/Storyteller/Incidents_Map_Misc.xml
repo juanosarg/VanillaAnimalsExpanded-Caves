@@ -3,7 +3,7 @@
 
 	<IncidentDef>
 		<defName>VAE_Incident_InsectoidHulk</defName>
-		<label>insectoid hulk</label>
+		<label>The Beastliest of Beasts</label>
 		<targetTags>
 			<li>Map_PlayerHome</li>
 		</targetTags>

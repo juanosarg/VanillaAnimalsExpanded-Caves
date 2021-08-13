@@ -9,7 +9,7 @@
 			<MoveSpeed>3.75</MoveSpeed>
 			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<MarketValue>1000</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<ToxicSensitivity>0</ToxicSensitivity>
@@ -31,7 +31,7 @@
 				<capacities>
 					<li>VAE_HulkAttack</li>
 				</capacities>
-				<power>10</power>
+				<power>18</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>VAE_Arms</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -48,7 +48,7 @@
 				<capacities>
 					<li>VAE_HulkDualAttack</li>
 				</capacities>
-				<power>15</power>
+				<power>25</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>VAE_Arms</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -94,7 +94,7 @@
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<body>VAE_InsectoidHulkBody</body>
-			<baseBodySize>4</baseBodySize>
+			<baseBodySize>3</baseBodySize>
 			<baseHungerRate>0.05</baseHungerRate>
 			<baseHealthScale>10</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
@@ -157,7 +157,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_InsectoidHulk/VAE_InsectoidHulk</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>2.1</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -165,13 +165,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_InsectoidHulk/VAE_Dessicated_InsectoidHulk</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>2.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_InsectoidHulk/VAE_InsectoidHulk</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2.25</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -179,7 +179,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_InsectoidHulk/VAE_Dessicated_InsectoidHulk</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

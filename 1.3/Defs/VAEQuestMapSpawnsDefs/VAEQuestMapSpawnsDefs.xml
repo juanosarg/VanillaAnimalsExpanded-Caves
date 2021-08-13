@@ -5,7 +5,7 @@
       <defName>VAE_SpawnSpiderThings</defName>
       <thingDef>VAECaves_SpiderLair</thingDef>
       <allowOnWater>false</allowOnWater>
-	  <numberToSpawn>3~3</numberToSpawn>
+	  <numberToSpawn>1~1</numberToSpawn>
    	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
 	   <terrainValidationDisallowed>
          
@@ -25,6 +25,25 @@
       <thingDef>VAECaves_EmptyCocoon</thingDef>
       <allowOnWater>false</allowOnWater>
 	  <numberToSpawn>30~30</numberToSpawn>
+   	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
+	   <terrainValidationDisallowed>
+         
+		 <li>WaterDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterMovingChestDeep</li>
+		 <li>WaterOceanDeep</li>
+		 <li>WaterShallow</li>
+		 <li>WaterOceanShallow</li>
+		<li>WaterMovingShallow</li>
+
+      </terrainValidationDisallowed>
+   </VAECaves.VAEQuestMapSpawnsDef>
+   
+      <VAECaves.VAEQuestMapSpawnsDef>
+      <defName>VAE_SpawnSpiderThingsWebs</defName>
+      <thingDef>VAECaves_Filth_Webs</thingDef>
+      <allowOnWater>false</allowOnWater>
+	  <numberToSpawn>500~650</numberToSpawn>
    	  <associatedMonster>VAECaves_AncientGiantSpider</associatedMonster> 
 	   <terrainValidationDisallowed>
          

@@ -25,8 +25,7 @@
     </questNameRules>
     <questDescriptionRules>
       <rulesStrings>
-        <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has reported that their livestock seems to be disappearing at alarming rates. A mess of silk strands is all that is often left, hinting that a ravenous nest of giant spiders is behind the disappearances.\n\n.
-		\nIf we successfully investigate this mystery, [allRewardsDescriptions]</li>
+        <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has reported that their livestock seems to be disappearing at alarming rates. A mess of silk strands is all that is often left, hinting that a ravenous nest of giant spiders is behind the disappearances.\n\nIf we successfully investigate this mystery, [allRewardsDescriptions]</li>
       </rulesStrings>
     </questDescriptionRules>
     <root Class="QuestNode_Sequence">
@@ -85,13 +84,13 @@
         <li Class="QuestNode_WorldObjectTimeout">
           <worldObject>$site</worldObject>
           <isQuestTimeout>true</isQuestTimeout>
-          <delayTicks>$(randInt(12,28)*60000)</delayTicks>
+          <delayTicks>$(randInt(7,7)*60000)</delayTicks>
           <inSignalDisable>site.MapGenerated</inSignalDisable>
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
                 <label>Quest expired: [resolvedQuestName]</label>
-                <text>The monsters have left this area, and you won't hear from them until they have claimed their next victims. The quest [resolvedQuestName] has expired.</text>
+                <text>The spiders have left this area, and you won't hear from them until they have claimed their next victims. The quest [resolvedQuestName] has expired.</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
@@ -109,7 +108,7 @@
               <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
             </parms>
             <customLetterLabel>Payment arrived</customLetterLabel>
-            <customLetterText>You have defeated the monsters!\n\nThe payment from [asker_faction_name] has arrived.</customLetterText>
+            <customLetterText>You have defeated the spiders!\n\nThe payment from [asker_faction_name] has arrived.</customLetterText>
             <nodeIfChosenPawnSignalUsed Class="QuestNode_Letter">
               <letterDef>ChoosePawn</letterDef>
               <label>[asker_faction_royalFavorLabel]</label>

@@ -8,7 +8,7 @@
 			<MoveSpeed>5</MoveSpeed>
 			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<MarketValue>1600</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<ToxicSensitivity>0</ToxicSensitivity>
@@ -35,7 +35,7 @@
 				<capacities>
 					<li>VAE_PlagueBite</li>
 				</capacities>
-				<power>12.5</power>
+				<power>16</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
@@ -70,11 +70,11 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<foodType>Corpse,CarnivoreAnimal</foodType>
 			<maxPreyBodySize>0.5</maxPreyBodySize>
-			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 			<body>BeetleLike</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
-			<baseBodySize>2.3</baseBodySize>
+			<baseBodySize>2</baseBodySize>
 			<baseHungerRate>0.05</baseHungerRate>
 			<baseHealthScale>2.5</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
@@ -123,29 +123,29 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_CaveCrawler</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.5</drawSize>
 					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_Dessicated_CaveCrawler</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_CaveCrawler</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>1.75</drawSize>
 					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_Dessicated_CaveCrawler</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_CaveCrawler</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 				
 					<shadowData>
 						  <volume>(0.5, 0.7, 0.43)</volume>
@@ -154,7 +154,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_CaveCrawler/VAE_Dessicated_CaveCrawler</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

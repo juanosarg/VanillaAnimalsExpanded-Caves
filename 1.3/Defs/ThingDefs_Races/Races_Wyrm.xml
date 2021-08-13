@@ -8,8 +8,8 @@
 		<label>wyrm</label>
 		<description>Wyrms are solitary creatures that live in the darkest cave systems, hunted to extinction in the core worlds. Their tails are able to apply an incredibly powerful toxin that quickly paralyzes their prey, while the sharp teeth rip flesh and steel to shreds.\n\nWyrms rarely bond with humans, but when they do, their bond is hard to break. A bonded wyrm will be more ferocious and brave when defending their master, but if the master dies, the wyrm will run away and live the rest of their life in solitude, never bonding with anyone again.</description>
 		<statBases>
-			<MoveSpeed>6</MoveSpeed>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>			
+			<MoveSpeed>5.8</MoveSpeed>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>			
 			<Flammability>0</Flammability>
 			<MarketValue>2400</MarketValue>
 			<ArmorRating_Blunt>.75</ArmorRating_Blunt>
@@ -24,7 +24,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>13</power>
+				<power>10</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 
@@ -34,7 +34,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>13</power>
+				<power>10</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 
@@ -55,7 +55,7 @@
 				<capacities>
 					<li>VAE_ToxicSting</li>
 				</capacities>
-				<power>25</power>
+				<power>15</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>VAE_AttackTail</linkedBodyPartsGroup>
 				<chanceFactor>0.75</chanceFactor>
@@ -102,7 +102,6 @@
 			<baseHealthScale>6</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<wildness>0.90</wildness>
-			<useMeatFrom>Iguana</useMeatFrom>
 			<trainability>Advanced</trainability>
 			<leatherDef>Leather_Lizard</leatherDef>
 			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>

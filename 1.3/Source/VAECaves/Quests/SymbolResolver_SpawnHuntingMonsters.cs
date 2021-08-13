@@ -60,7 +60,7 @@ namespace VAECaves
                         map.GetComponent<HuntQuest_MapComponent>().monsterKindDef = huntingTarget;
                     }
                     else { map.GetComponent<HuntQuest_MapComponent>().monsterKindDef = huntingTarget; }
-
+                    map.GetComponent<HuntQuest_MapComponent>().threatPoints = rp.threatPoints;
                     IntVec3 point;
                     LordJob lordJob;
                     if (Rand.Bool && (from x in rp.rect.Cells

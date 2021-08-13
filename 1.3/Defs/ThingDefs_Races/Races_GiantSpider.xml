@@ -6,10 +6,10 @@
 		<label>giant spider</label>
 		<description>A type of arthropod, Giant Spiders are in fact nowhere near the size of house spiders often found everywhere where humans conquered. However, similar rules apply - they lay eggs in spider lairs, sting their prey with venomous stinger and wrap it in cocoons for when the time is right to feast. They regenerate their wounds fast and are very susceptible to fire.\n\nThe mature Giant Spider is the most commonly met life stage of a giant spider. Their powerful fang bite will stun their prey for a very long period of time, giving the giant spider enough time to wrap it in the spidersilk cocoon.\n\nSpecial mechanics: If attacked, all other giant spiders nearby, in any life stage, will enrage and assault the colony.</description>
 		<statBases>
-			<MoveSpeed>3</MoveSpeed>
+			<MoveSpeed>3.6</MoveSpeed>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<MarketValue>1000</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<ToxicSensitivity>0</ToxicSensitivity>
@@ -26,15 +26,12 @@
 				<pawnkinddefsToAffect>
 					<li>VAECaves_GiantSpider</li>
 					<li>VAECaves_AncientGiantSpider</li>
-					<li>VAECaves_GiantSpiderHatchling</li>
+					
 				</pawnkinddefsToAffect>
 
 			</li>
 
-			<li Class="CompProperties_CanBeDormant" />
-			<li Class="CompProperties_WakeUpDormant">
-				<wakeUpOnDamage>true</wakeUpOnDamage>
-			</li>
+			
 
 
 		</comps>
@@ -45,7 +42,7 @@
 				<capacities>
 					<li>VAE_CocoonBite</li>
 				</capacities>
-				<power>10</power>
+				<power>16</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -89,6 +86,7 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<foodType>CarnivoreAnimal</foodType>
 			<predator>true</predator>
+			<herdAnimal>true</herdAnimal>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<body>VAE_Arachnid</body>
@@ -100,17 +98,10 @@
 			<wildness>1</wildness>
 			<trainability>Intermediate</trainability>
 			<lifeStageAges>
-				<li>
-					<def>EusocialInsectLarva</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>EusocialInsectJuvenile</def>
-					<minAge>0.03</minAge>
-				</li>
+				
 				<li>
 					<def>EusocialInsectAdult</def>
-					<minAge>0.4</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
 					<soundCall>Pawn_Megascarab_Call</soundCall>
@@ -142,38 +133,11 @@
 			<max>6</max>
 		</wildGroupSize>
 		<lifeStages>
+			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_GiantSpider</texPath>
-					<drawSize>2</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.3, 0.3)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_Dessicated_GiantSpider</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_GiantSpider</texPath>
-					<drawSize>2.5</drawSize>
-					<shadowData>
-						<volume>(0.6, 0.45, 0.45)</volume>
-						<offset>(0,0,-0.25)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_Dessicated_GiantSpider</texPath>
-					<drawSize>2.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_GiantSpider</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2.3</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -181,7 +145,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/VAE_GiantSpider/VAE_Dessicated_GiantSpider</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

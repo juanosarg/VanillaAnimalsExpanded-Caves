@@ -10,7 +10,7 @@
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
 			<ArmorRating_Heat>-1</ArmorRating_Heat>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<MarketValue>1000</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<ToxicSensitivity>0</ToxicSensitivity>
@@ -28,10 +28,7 @@
 				<pawnToTurnInto>VAECaves_GiantSpider</pawnToTurnInto>
 
 			</li>
-			<li Class="CompProperties_CanBeDormant" />
-			<li Class="CompProperties_WakeUpDormant">
-				<wakeUpOnDamage>true</wakeUpOnDamage>
-			</li>
+			
 			
 
 		</comps>
@@ -78,7 +75,7 @@
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<body>VAE_Arachnid</body>
-			<baseBodySize>0.4</baseBodySize>
+			<baseBodySize>0.20</baseBodySize>
 			<baseHungerRate>0.05</baseHungerRate>
 			<baseHealthScale>0.5</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
@@ -87,7 +84,7 @@
 			<trainability>Intermediate</trainability>
 			<lifeStageAges>
 				<li>
-					<def>EusocialInsectLarva</def>
+					<def>EusocialInsectAdult</def>
 					<minAge>0</minAge>
 				</li>
 				

@@ -127,9 +127,9 @@
 			</li>
 			<li Class="CompProperties_SpawnerFilth">
 				<filthDef>VAECaves_Filth_Webs</filthDef>
-				<spawnCountOnSpawn>20</spawnCountOnSpawn>
+				<spawnCountOnSpawn>75</spawnCountOnSpawn>
 				<spawnMtbHours>4</spawnMtbHours>
-				<spawnRadius>5</spawnRadius>
+				<spawnRadius>7</spawnRadius>
 			</li>
 			<li Class="CompProperties_SelfhealHitpoints">
 				<ticksPerHeal>6000</ticksPerHeal>

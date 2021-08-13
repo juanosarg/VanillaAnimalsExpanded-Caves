@@ -12,6 +12,7 @@ namespace VAECaves
     public class HuntQuest_MapComponent : MapComponent
     {
         public PawnKindDef monsterKindDef = null;
+        public float? threatPoints = 0;
         public bool verifyFirstTime = true;
         public int spawnCounter = 0;
 
@@ -60,6 +61,10 @@ namespace VAECaves
                     if (spawnCounter == 0)
                     {
                         spawnCounter = Rand.RangeInclusive(element.numberToSpawn.min, element.numberToSpawn.max);
+                        if (threatPoints != 0)
+                        {
+                            spawnCounter *= (int)MultiplierByThreat(threatPoints);
+                        }
 
                     }
                     foreach (IntVec3 c in tmpTerrain)
@@ -121,6 +126,23 @@ namespace VAECaves
                 }
             }
             this.verifyFirstTime = false;
+        }
+
+        public float MultiplierByThreat(float? threat)
+        {
+            if (threat < 1000)
+            {
+                return 1f;
+            } if(threat < 5000)
+            {
+                return 1.5f;
+            }
+            if (threat < 10000)
+            {
+                return 2f;
+            }
+            else return 2.5f;
+
         }
     }
 }
