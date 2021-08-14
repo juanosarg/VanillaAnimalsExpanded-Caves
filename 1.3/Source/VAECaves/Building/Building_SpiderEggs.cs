@@ -36,7 +36,7 @@ namespace VAECaves
             if (tickCounter > totalTicks)
             {
                 System.Random rand = new System.Random();
-                int numberOfHatchlings = rand.Next(4);
+                int numberOfHatchlings = rand.Next(2);
                
                 for (int i = 0; i <= numberOfHatchlings; i++)
                 {

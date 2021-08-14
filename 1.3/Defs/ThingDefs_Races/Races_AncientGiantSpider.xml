@@ -165,6 +165,7 @@
 			<lifeExpectancy>850</lifeExpectancy>
 			<wildness>1</wildness>
 			<trainability>Intermediate</trainability>
+			<thinkTreeMain>VEF_AnimalWeirdEater</thinkTreeMain>
 			<lifeStageAges>
 
 				<li>
