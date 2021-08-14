@@ -17,6 +17,7 @@ namespace VAECaves
 
         public const float animalSpawnMultiplierBase = 1;
         public float animalSpawnMultiplier = animalSpawnMultiplierBase;
+        public bool arachnophobiaMode = false;
 
 
 
@@ -25,6 +26,8 @@ namespace VAECaves
             base.ExposeData();
             
             Scribe_Values.Look(ref animalSpawnMultiplier, "animalSpawnMultiplier", 1, true);
+            Scribe_Values.Look(ref arachnophobiaMode, "arachnophobiaMode", false, true);
+
 
         }
 
@@ -44,6 +47,9 @@ namespace VAECaves
             {
                 animalSpawnMultiplier = animalSpawnMultiplierBase;
             }
+            ls.Gap(26f);
+            ls.CheckboxLabeled("VAE_ArachnophobiaMode".Translate(), ref arachnophobiaMode, null);
+            
 
 
             ls.End();

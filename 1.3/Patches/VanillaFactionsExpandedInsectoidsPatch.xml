@@ -17,40 +17,40 @@
 					<xpath>/Defs/ThingDef[defName = "VAECaves_CaveCrawler"]</xpath>
 					<value>
 
-					<butcherProducts>
-						<VFEI_Chitin>40</VFEI_Chitin>
-					</butcherProducts>
-				
+						<butcherProducts>
+							<VFEI_Chitin>40</VFEI_Chitin>
+						</butcherProducts>
+
 
 
 
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationAdd">
 
 					<xpath>/Defs/ThingDef[defName = "VAECaves_InsectoidHulk"]</xpath>
 					<value>
 
-					<butcherProducts>
-						<VFEI_Chitin>60</VFEI_Chitin>
-					</butcherProducts>
-				
+						<butcherProducts>
+							<VFEI_Chitin>60</VFEI_Chitin>
+						</butcherProducts>
+
 
 
 
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationAdd">
 
 					<xpath>/Defs/ThingDef[defName = "VAECaves_GiantSpider"]</xpath>
 					<value>
 
-					<butcherProducts>
-						<VFEI_Chitin>60</VFEI_Chitin>
-					</butcherProducts>
-				
+						<butcherProducts>
+							<VFEI_Chitin>60</VFEI_Chitin>
+						</butcherProducts>
+
 
 
 
@@ -61,19 +61,55 @@
 					<xpath>/Defs/ThingDef[defName = "VAECaves_AncientGiantSpider"]</xpath>
 					<value>
 
-					<butcherProducts>
-						<VFEI_Chitin>200</VFEI_Chitin>
-					</butcherProducts>
-				
+						<butcherProducts>
+							<VFEI_Chitin>200</VFEI_Chitin>
+						</butcherProducts>
+
 
 
 
 					</value>
 				</li>
+
+				<li Class="PatchOperationReplace">
+
+					<xpath>/Defs/ThingDef[defName = "VAECaves_SpiderLair"]/building/deconstructible</xpath>
+					<value>
+
+						<deconstructible>true</deconstructible>
+						
+					</value>
+				</li>
 				
-				
-				
-				
+				<li Class="PatchOperationReplace">
+
+					<xpath>/Defs/ThingDef[defName = "VAECaves_SpiderLair"]/building/claimable</xpath>
+					<value>
+
+						<claimable>true</claimable>
+
+
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/ThingDef[defName = "VAECaves_SpiderLair"]</xpath>
+					<value>
+
+						<costList>
+							<VFEI_Spidersilk>200</VFEI_Spidersilk>
+							<VFEI_RoyalInsectJelly>30</VFEI_RoyalInsectJelly>
+							
+						</costList>
+
+
+					</value>
+				</li>
+
+
+
+
 
 
 

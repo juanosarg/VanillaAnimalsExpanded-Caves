@@ -121,7 +121,7 @@
 		<defName>VAE_WallBreaker</defName>
 		<hediffClass>VAECaves.Hediff_WallBreaker</hediffClass>
 		<label>wallbreaker</label>
-		<description>This insectoid hulk is rampaging ravenously and will crush walls and other structures in his path.</description>
+		<description>This insectoid hulk is rampaging ravenously and will crush walls and other structures in its path.</description>
 		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>

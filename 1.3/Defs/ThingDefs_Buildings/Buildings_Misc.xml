@@ -85,7 +85,7 @@
 
 	</ThingDef>
 
-	<ThingDef ParentName="BuildingNaturalBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>VAECaves_SpiderLair</defName>
 		<label>spider lair</label>
 		<description>A spider lair.</description>
@@ -139,7 +139,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<blockWind>true</blockWind>
-
+		<filthLeaving>VAECaves_Filth_Webs</filthLeaving>
 
 	</ThingDef>
 	

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>VAECaves_AncientGiantSpider</defName>
 		<label>ancient giant spider</label>
-		<description>A type of arthropod, Giant Spiders are in fact nowhere near the size of house spiders often found everywhere where humans conquered. However, similar rules apply - they lay eggs in spider lairs, sting their prey with venomous stinger and wrap it in cocoons for when the time is right to feast. They regenerate their wounds fast and are very susceptible to fire.\n\nAn incredibly rare and even more dangerous life stage of a giant spider, ancient spiders have lived for hundreds of years and mastered their killing tools. They are capable of a ranged web splash attack that will cover the area in dense spiderwebs. If left not taken care of, an ancient giant spider can quickly turn even bigger settlements into giant husks of spiderweb and eggs.\n\nSpecial mechanics: If attacked, all other giant spiders nearby, in any life stage, will enrage and assault the colony. Its melee attacks will cause infections.</description>
+		<description>A type of arthropod, Giant Spiders are in fact nowhere near the size of the common house spiders humans are used to. However, similar rules apply - they lay eggs in spider lairs, sting their prey with venomous stinger and wrap it in cocoons for when the time is right to feast. They regenerate their wounds fast and are very susceptible to fire.\n\nAn incredibly rare and even more dangerous life stage of a giant spider, ancient spiders have lived for hundreds of years and mastered their killing tools. They are capable of a ranged web splash attack that will cover the area in dense spiderwebs. If left not taken care of, an ancient giant spider can quickly turn even bigger settlements into giant husks of spiderweb and eggs.\n\nSpecial mechanics: If attacked, all other giant spiders nearby, in any life stage, will enrage and assault the colony. Its melee attacks will cause infections.</description>
 		<statBases>
 			<MoveSpeed>3.6</MoveSpeed>
 			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
@@ -52,7 +52,8 @@
 					<li>InsectJelly</li>					
 
 				</customThingToEat>
-				<nutrition>1</nutrition>				
+				<ignoreUseHitPoints>true</ignoreUseHitPoints>
+				<nutrition>2</nutrition>				
 				<fullyDestroyThing>false</fullyDestroyThing>
 				<percentageOfDestruction>0.2</percentageOfDestruction>
 				<needsWater>false</needsWater>
@@ -61,7 +62,8 @@
 			<li Class="AnimalBehaviours.CompProperties_Untameable">
 				
 			</li>
-			
+			<li Class="VAECaves.CompProperties_RemoveLegs">
+			</li>
 
 		</comps>
 		<verbs>
@@ -159,10 +161,10 @@
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<body>VAE_Arachnid</body>
 			<baseBodySize>4</baseBodySize>
-			<baseHungerRate>0.05</baseHungerRate>
+			<baseHungerRate>2</baseHungerRate>
 			<baseHealthScale>20</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<lifeExpectancy>850</lifeExpectancy>
+			<lifeExpectancy>100</lifeExpectancy>
 			<wildness>1</wildness>
 			<trainability>Intermediate</trainability>
 			<thinkTreeMain>VEF_AnimalWeirdEater</thinkTreeMain>
@@ -170,7 +172,7 @@
 
 				<li>
 					<def>EusocialInsectAdult</def>
-					<minAge>250</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
 					<soundCall>Pawn_Megascarab_Call</soundCall>

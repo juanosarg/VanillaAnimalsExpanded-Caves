@@ -30,6 +30,7 @@ namespace VAECaves
             {
                 mapComp.RemoveSpiderLairBuilt(this);
             }
+            MakeAncientsMad();
             base.Destroy(mode);
         }
 
@@ -40,7 +41,7 @@ namespace VAECaves
             {
                 mapComp.RemoveSpiderLairBuilt(this);
             }
-           
+            MakeAncientsMad();
             base.Kill(dinfo, exactCulprit);
         }
         public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
@@ -48,14 +49,20 @@ namespace VAECaves
             base.PostApplyDamage(dinfo, totalDamageDealt);
             if(dinfo.Instigator.Faction!=null && dinfo.Instigator.Faction.IsPlayer)
             {
-                List<Pawn> pawnsaffected = (from x in this.Map.mapPawns.AllPawnsSpawned
-                                            where x.kindDef == PawnKindDef.Named("VAECaves_AncientGiantSpider")
-                                            select x).ToList();
-                foreach (Pawn pawnaffected in pawnsaffected)
-                {
-                    pawnaffected.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter, null, false, false, null, false, false, false);
-                }
+                MakeAncientsMad();
             }
+        }
+
+        public void MakeAncientsMad()
+        {
+            List<Pawn> pawnsaffected = (from x in this.Map.mapPawns.AllPawnsSpawned
+                                        where x.kindDef == PawnKindDef.Named("VAECaves_AncientGiantSpider")
+                                        select x).ToList();
+            foreach (Pawn pawnaffected in pawnsaffected)
+            {
+                pawnaffected.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Manhunter, null, false, false, null, false, false, false);
+            }
+
         }
 
 

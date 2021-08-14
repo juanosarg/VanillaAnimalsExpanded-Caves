@@ -31,12 +31,22 @@ namespace VAECaves
 			Toil toil3 = new Toil();
 			toil3.initAction = delegate
 			{
-				IntVec3 c;
-				CellFinder.TryFindRandomReachableCellNear(job.targetA.Cell, pawn.Map, 3, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false, false, false), (IntVec3 x) => IsGoodEggCell(x, pawn) == true, null, out c, 999999);
-				if (c.IsValid) {
-					Thing eggs = ThingMaker.MakeThing(ThingDef.Named("VAECaves_SpiderEggs"), null);
-					GenSpawn.Spawn(eggs, c, pawn.Map, WipeMode.FullRefund);
+
+				System.Random rand = new System.Random();
+				int numberOfEggs = rand.Next(2);
+
+				for (int i = 0; i <= numberOfEggs; i++)
+				{
+					IntVec3 c;
+					CellFinder.TryFindRandomReachableCellNear(job.targetA.Cell, pawn.Map, 3, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false, false, false), (IntVec3 x) => IsGoodEggCell(x, pawn) == true, null, out c, 999999);
+					if (c.IsValid)
+					{
+						Thing eggs = ThingMaker.MakeThing(ThingDef.Named("VAECaves_SpiderEggs"), null);
+						GenSpawn.Spawn(eggs, c, pawn.Map, WipeMode.FullRefund);
+					}
 				}
+
+				
 				
 			};
 			toil3.defaultCompleteMode = ToilCompleteMode.Instant;
