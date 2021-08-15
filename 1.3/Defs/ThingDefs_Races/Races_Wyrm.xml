@@ -42,9 +42,9 @@
 			<li>
 
 				<capacities>
-					<li>VAE_VeryToxicBite</li>
+					<li>Bite</li>
 				</capacities>
-				<power>12</power>
+				<power>10</power>
 				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.9</chanceFactor>
@@ -55,7 +55,7 @@
 				<capacities>
 					<li>VAE_ToxicSting</li>
 				</capacities>
-				<power>15</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>VAE_AttackTail</linkedBodyPartsGroup>
 				<chanceFactor>0.75</chanceFactor>
@@ -100,7 +100,7 @@
 			<baseBodySize>2.4</baseBodySize>
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>6</baseHealthScale>
-			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<foodType>CarnivoreAnimalStrict</foodType>
 			<wildness>0.90</wildness>
 			<trainability>Advanced</trainability>
 			<leatherDef>Leather_Lizard</leatherDef>

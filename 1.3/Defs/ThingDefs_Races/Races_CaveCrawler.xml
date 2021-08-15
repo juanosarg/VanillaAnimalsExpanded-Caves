@@ -69,13 +69,14 @@
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<foodType>Corpse,CarnivoreAnimal</foodType>
+			<predator>true</predator>
 			<maxPreyBodySize>0.5</maxPreyBodySize>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
 			<body>BeetleLike</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<baseBodySize>2</baseBodySize>
-			<baseHungerRate>0.05</baseHungerRate>
+			<baseHungerRate>0.35</baseHungerRate>
 			<baseHealthScale>2.5</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<lifeExpectancy>10</lifeExpectancy>

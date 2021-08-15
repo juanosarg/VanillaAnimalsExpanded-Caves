@@ -317,6 +317,7 @@
     <Compile Include="HarmonyPatches\HarmonyPatches.cs" />
     <Compile Include="HarmonyPatches\TrainableUtility_TamenessCanDecay.cs" />
     <Compile Include="Hediffs\HediffComp_ViciousAttack.cs" />
+    <Compile Include="Hediffs\Hediff_BleedingWound.cs" />
     <Compile Include="Hediffs\Hediff_WallBreaker.cs" />
     <Compile Include="Hediffs\Properties\HediffCompProperties_ViciousAttack.cs" />
     <Compile Include="HarmonyPatches\VAECaves.cs" />
