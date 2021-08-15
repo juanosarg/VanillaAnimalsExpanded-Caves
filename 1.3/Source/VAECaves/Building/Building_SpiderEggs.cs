@@ -17,7 +17,7 @@ namespace VAECaves
         public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
             base.PostApplyDamage(dinfo, totalDamageDealt);
-            if(dinfo.Instigator.Faction!=null && dinfo.Instigator.Faction.IsPlayer)
+            if(dinfo.Instigator?.Faction?.IsPlayer==true)
             {
                 List<Pawn> pawnsaffected = (from x in this.Map.mapPawns.AllPawnsSpawned
                                             where x.kindDef == PawnKindDef.Named("VAECaves_AncientGiantSpider")
