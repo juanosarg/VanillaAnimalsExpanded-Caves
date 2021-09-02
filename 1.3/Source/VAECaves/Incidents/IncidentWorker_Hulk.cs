@@ -54,7 +54,7 @@ namespace VAECaves
             Pawn hulk = PawnGenerator.GeneratePawn(request);
             GenSpawn.Spawn(hulk, intVec, map, rot, WipeMode.Vanish, false);
             hulk.health.AddHediff(HediffDef.Named("VAE_WallBreaker"));
-            hulk.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("ManhunterPermanent", true), null, true, false, null, false);
+            hulk.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("Manhunter", true), null, true, false, null, false);
             Find.LetterStack.ReceiveLetter("VAE_LetterLabelInsectoidHulk".Translate(), "VAE_LetterInsectoidHulk".Translate(), LetterDefOf.ThreatBig, hulk, null, null);
 
             int numScarabs = this.scarabAnimalsCount.RandomInRange;
@@ -63,7 +63,7 @@ namespace VAECaves
                 request = new PawnGenerationRequest(PawnKindDef.Named("Megascarab"), null, PawnGenerationContext.NonPlayer);
                 Pawn scarab = PawnGenerator.GeneratePawn(request);
                 GenSpawn.Spawn(scarab, CellFinder.RandomClosewalkCellNear(hulk.Position, hulk.Map, 5, null), map, rot, WipeMode.Vanish, false);
-                scarab.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("ManhunterPermanent", true), null, true, false, null, false);
+                scarab.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("Manhunter", true), null, true, false, null, false);
 
             }
             int numSpelopedes = this.spelopedeAnimalsCount.RandomInRange;
@@ -72,7 +72,7 @@ namespace VAECaves
                 request = new PawnGenerationRequest(PawnKindDef.Named("Spelopede"), null, PawnGenerationContext.NonPlayer);
                 Pawn spelopede = PawnGenerator.GeneratePawn(request);
                 GenSpawn.Spawn(spelopede, CellFinder.RandomClosewalkCellNear(hulk.Position, hulk.Map, 5, null), map, rot, WipeMode.Vanish, false);
-                spelopede.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("ManhunterPermanent", true), null, true, false, null, false);
+                spelopede.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("Manhunter", true), null, true, false, null, false);
 
             }
             int numMegaspiders = this.megaspiderAnimalsCount.RandomInRange;
@@ -81,7 +81,7 @@ namespace VAECaves
                 request = new PawnGenerationRequest(PawnKindDef.Named("Megaspider"), null, PawnGenerationContext.NonPlayer);
                 Pawn megaspider = PawnGenerator.GeneratePawn(request);
                 GenSpawn.Spawn(megaspider, CellFinder.RandomClosewalkCellNear(hulk.Position, hulk.Map, 5, null), map, rot, WipeMode.Vanish, false);
-                megaspider.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("ManhunterPermanent", true), null, true, false, null, false);
+                megaspider.mindState.mentalStateHandler.TryStartMentalState(DefDatabase<MentalStateDef>.GetNamed("Manhunter", true), null, true, false, null, false);
 
             }
            

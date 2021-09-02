@@ -12,7 +12,7 @@
 		<category>ThreatBig</category>
 		<pointsScaleable>true</pointsScaleable>
 		<minRefireDays>50</minRefireDays>
-		<earliestDay>60</earliestDay>
+		<earliestDay>180</earliestDay>
 		<tale>Raid</tale>
 	</IncidentDef>
 	
