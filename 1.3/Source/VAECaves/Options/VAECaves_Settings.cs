@@ -18,7 +18,7 @@ namespace VAECaves
         public const float animalSpawnMultiplierBase = 1;
         public float animalSpawnMultiplier = animalSpawnMultiplierBase;
         public bool arachnophobiaMode = false;
-
+        public bool insectoidHulkDisabled = false;
 
 
         public override void ExposeData()
@@ -27,6 +27,7 @@ namespace VAECaves
             
             Scribe_Values.Look(ref animalSpawnMultiplier, "animalSpawnMultiplier", 1, true);
             Scribe_Values.Look(ref arachnophobiaMode, "arachnophobiaMode", false, true);
+            Scribe_Values.Look(ref insectoidHulkDisabled, "insectoidHulkDisabled", false, true);
 
 
         }
@@ -49,7 +50,8 @@ namespace VAECaves
             }
             ls.Gap(26f);
             ls.CheckboxLabeled("VAE_ArachnophobiaMode".Translate(), ref arachnophobiaMode, null);
-            
+            ls.Gap(26f);
+            ls.CheckboxLabeled("VAE_InsectoidHulkDisabled".Translate(), ref insectoidHulkDisabled, null);
 
 
             ls.End();

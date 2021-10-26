@@ -32,7 +32,7 @@ namespace VAECaves
             }
 
             
-            return this.TryFindAnimalKind(map.Tile, out pawnKindDef) && this.TryFindEntryCell(map, out intVec) && JellyFlag;
+            return this.TryFindAnimalKind(map.Tile, out pawnKindDef) && this.TryFindEntryCell(map, out intVec) && JellyFlag && !VAECaves_Mod.settings.insectoidHulkDisabled;
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)

@@ -305,7 +305,9 @@
     <Compile Include="Building\Building_SpiderLair.cs" />
     <Compile Include="Building\Building_Cocoon.cs" />
     <Compile Include="Comps\CompBuildSpiderLair.cs" />
+    <Compile Include="Comps\CompConditionalSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_BuildSpiderLair.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_ConditionalSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RemoveLegs.cs" />
     <Compile Include="Comps\CompRemoveLegs.cs" />
     <Compile Include="Damage\DamageWorker_CocoonRanged.cs" />

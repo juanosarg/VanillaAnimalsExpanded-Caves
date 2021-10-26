@@ -18,6 +18,7 @@
 	<VAE_AnimalSpawnMultiplierTooltip>This multiplier will affect the spawn changes (commonalities) of ALL animals in this mod. For example, if set to 0.5 animals from the mod will spawn half as much as default (which is 1). If set to 2, you'll get twice as many as default, and so on. This only affects wild spawns.</VAE_AnimalSpawnMultiplierTooltip>
 	<VAE_Reset>Reset multiplier</VAE_Reset>
 	<VAE_ArachnophobiaMode>Arachnophobia mode: remove legs from spiders' graphics</VAE_ArachnophobiaMode>
+	<VAE_InsectoidHulkDisabled>Disable "The Beastliest of Beasts" incident (Insectoid Hulk assault)</VAE_InsectoidHulkDisabled>
 
        
 

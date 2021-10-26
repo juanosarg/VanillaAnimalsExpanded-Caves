@@ -73,20 +73,7 @@
 			</li>
 		</tools>
 		<race>
-			<wildBiomes>
-				<ColdBog>0.01</ColdBog>
-				<BorealForest>0.01</BorealForest>
-				<Tundra>0.01</Tundra>				
-				<IceSheet>0.01</IceSheet>
-				<SeaIce>0.01</SeaIce>
-				<TemperateSwamp>0.01</TemperateSwamp>
-				<TemperateForest>0.01</TemperateForest>		
-				<TropicalSwamp>0.01</TropicalSwamp>					
-				<TropicalRainforest>0.01</TropicalRainforest>
-				<AridShrubland>0.01</AridShrubland>
-				<Desert>0.01</Desert>
-				<ExtremeDesert>0.01</ExtremeDesert>					
-			</wildBiomes>
+			
 			<fleshType>Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<foodType>CarnivoreAnimal</foodType>
