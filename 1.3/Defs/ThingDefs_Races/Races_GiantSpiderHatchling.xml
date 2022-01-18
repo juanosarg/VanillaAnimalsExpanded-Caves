@@ -72,7 +72,7 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<predator>false</predator>
-			<canBePredatorPrey>false</canBePredatorPrey>
+			<canBePredatorPrey>true</canBePredatorPrey>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<body>VAE_Arachnid</body>

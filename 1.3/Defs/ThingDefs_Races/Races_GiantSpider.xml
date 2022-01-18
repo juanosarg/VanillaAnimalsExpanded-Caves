@@ -9,7 +9,7 @@
 			<MoveSpeed>3.6</MoveSpeed>
 			<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<MarketValue>1000</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<ToxicSensitivity>0</ToxicSensitivity>
